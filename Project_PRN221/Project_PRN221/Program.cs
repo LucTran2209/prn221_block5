@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
+using Project_PRN221.CustomHandler;
 using Project_PRN221.Models;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +30,18 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 		options.AccessDeniedPath = "/shared/404";
 
 	});
+
+builder.Services.AddAuthorization(config =>
+{
+    config.AddPolicy("UserPolicy", policyBuilder =>
+    {
+        policyBuilder.UserRequireCustomClaim(ClaimTypes.Name);
+    });
+});
+
+builder.Services.AddScoped<IAuthorizationHandler, PoliciesAuthorizationHandler>();
+builder.Services.AddScoped<IAuthorizationHandler, RolesAuthorizationHandler>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -44,6 +59,21 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<PROJECT_SENT_DOCUMENTContext>();
+        context.Database.EnsureCreated();
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred creating the DB.");
+    }
+}
 
 //app.MapHub<ProductServer>("/hubs");
 

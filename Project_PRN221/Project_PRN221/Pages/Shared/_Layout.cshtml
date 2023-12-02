@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using System.Security.Claims;
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -65,7 +67,7 @@
 
 	<header>
 		<!-- HEADER ON DESKTOP -->
-		<nav class="navbar-desktop">
+		<nav class="navbar-desktop" style="background:black">
 			<div class="left">
 				<a href="/index" class="logo">
 					<img src="~/images/logo-2.png" alt="Royate" />
@@ -74,74 +76,59 @@
 			<ul>
 				<li class="current">
 					<a href="/Index">
-						Home
+						Trang chủ
 					</a>
 				</li>
 				<li>
 					<a href="/About_us">
-						About Us
+						Văn bản gửi
 					</a>
 				</li>
 				<li>
 					<a href="/Products/Menu">
-						Menu
+						Văn bản nhận
 					</a>
 				</li>
-				@*<li class="has-children">
-				<a href="#">
-				Blog
-				</a>
-				<div class="sub-menu">
-				<div class="wrapper">
-				<ul>
-				<li>
-				<a href="blog-masonry.html">Blog Masonry</a>
-				</li>
-				<li>
-				<a href="blog-masonry-wide.html">Blog Masonry Wide</a>
-				</li>
-				<li>
-				<a href="blog-standard-right-sidebar.html">Blog Standard Right Sidebar</a>
-				</li>
-				<li>
-				<a href="blog-standard-left-sidebar.html">Blog Standard Left Sidebar</a>
-				</li>
-				<li>
-				<a href="blog-standard-no-sidebar.html">Blog Standard No Sidebar</a>
-				</li>
-				<li>
-				<a href="blog-single.html">Blog Single</a>
-				</li>
-				</ul>
-				</div>
-				</div>
-				</li>*@
 				<li class="has-children">
 					<a href="#">
-						Shop
+						Tài khoản
 					</a>
 					<div class="sub-menu">
 						<div class="wrapper">
 							<ul>
-								@if (ViewData["Contact"] != null)
+								@if (User.Identity.IsAuthenticated)
 								{
+									string role = User.FindFirstValue(ClaimTypes.Role);
+									string name = User.FindFirstValue(ClaimTypes.Name);
 									<li>
-										<a href="#">Hi, @ViewData["Contact"]</a>
+										<a href="#">Xin chào, @name]</a>
 									</li>
+									@if (role.Equals("Admin"))
+									{
+										//Chức năng Admin
+										<li>
+											<a href="/Products/Menu">
+												Quản lý tài khoản
+											</a>
+										</li>
+										<li>
+											<a href="/Products/Menu">
+												Thống kê văn bản
+											</a>
+										</li>
+									}
 									<li>
-										<a href="/user/checkout">CheckOut</a>
+										<a href="/user/logout">Đăng xuất</a>
 									</li>
-									<li>
-										<a href="/user/logout">Logout</a>
-									</li>
+
 								}
 								else
 								{
 									<li>
-										<a href="/User/Login">Login</a>
+										<a href="/User/Login">Đăng nhập</a>
 									</li>
 									<li>
-										<a href="/User/SignUp">SignUp</a>
+										<a href="/User/Register">Đăng ký</a>
 									</li>
 								}
 							</ul>

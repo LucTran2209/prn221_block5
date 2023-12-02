@@ -678,6 +678,8 @@ select {
   overflow: hidden;
   cursor: pointer;
   background: none; }
+  .au-btn--black{
+    color:#000;}
   .au-btn.short {
     width: 145px; }
   .au-btn.medium {

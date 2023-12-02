@@ -857,55 +857,69 @@ select {
 	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
-	color: #fff;
+	color: #000;
 	border: none;
 	overflow: hidden;
 	cursor: pointer;
 	background: none;
+	
 	&.short {
 		width: 145px;
 	}
+
 	&.medium {
 		width: 174px;
 	}
+
 	&.long {
 		width: 183px;
 	}
+
 	&.extra-long {
 		width: 208px;
 	}
+
 	&.round {
 		border-radius: 21px;
 	}
+
 	&.has-bd {
 		border: 1px solid rgba(255,255,255,0.5);
+
 		&.bd-999 {
 			border: 1px solid #999;
 		}
+
 		&.bd-fff {
 			border: 1px solid #fff;
 		}
+
 		&:hover {
 			border-color: transparent;
 		}
 	}
+
 	&.has-bg {
 		background: $bold-color;
 	}
+
 	&.bg-fourth-color {
 		background: $fourth-color;
 		-webkit-transition: all 0.3s ease;
 		-moz-transition: all 0.3s ease;
 		-o-transition: all 0.3s ease;
 		transition: all 0.3s ease;
+
 		&:hover {
 			background: #cc2929;
 		}
 	}
+
 	&.btn-cart {
 		width: 158px;
 		height: 42px;
 		color: $bold-color;
+
 		&:hover {
 			color: #fff;
 		}

@@ -1,0 +1,55 @@
+﻿@page
+@model Project_PRN221.Pages.User.LoginModel
+@{
+}
+<main>
+	<!-- PAGE BREADCRUMB -->
+	<section class="page-breadcrumb">
+		<div class="container">
+			<div class="row justify-content-between align-content-center">
+				<div class="col-md-auto">
+					<h3>My account</h3>
+				</div>
+				<div class="col-md-auto">
+					<ul class="au-breadcrumb">
+						<li>
+							<a href="/index">Home</a>
+						</li>
+						<li>
+							<a href="#">My Account</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SIGN IN -->
+	<section class="section-primary sign-in pt-112 pb-90">
+		<div class="container">
+			<div class="woocommerce">
+				<h4>Đăng nhập</h4>
+				<form method="post" class="woocommerce-form woocommerce-form-login login">
+					<div class="form-holder">
+						<label for="email">Email<span class="required">*</span></label>
+						<input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" asp-for="Account.Email" id="email" value="">
+					</div>
+					<div class="form-holder">
+						<label for="password">Mật khẩu <span class="required">*</span></label>
+						<input class="woocommerce-Input woocommerce-Input--text input-text form-control" type="password" asp-for="Account.Password" id="password">
+					</div>
+					<div class="form-holder last">
+						<input type="submit" class="woocommerce-Button button au-btn round has-bg" name="login" value="Login">
+						<a href="/user/Register" class="au-btn round au-btn--hover has-bd bd-fff short au-btn--black">Đăng Ký</a>
+						<a href="/user/ForgetPassword" class="au-btn round au-btn--hover has-bd bd-fff short au-btn--black">Quên mật khẩu</a>
+					</div>
+				</form>
+				@if (ViewBag.Error != null)
+				{
+					<p>@ViewBag.Error</p>
+				}
+			</div>
+		</div>
+
+	</section>
+</main>

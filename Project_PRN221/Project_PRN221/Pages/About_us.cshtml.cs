@@ -7,8 +7,8 @@ namespace Project_PRN221.Pages
 {
     public class About_usModel : PageModel
     {
-  //      private readonly PizzaShopDbContext _context;
-  //      public About_usModel(PizzaShopDbContext context)
+  //      private readonly PROJECT_SENT_DOCUMENTContext _context;
+  //      public About_usModel(PROJECT_SENT_DOCUMENTContext context)
   //      {
   //          _context = context;
   //      }
