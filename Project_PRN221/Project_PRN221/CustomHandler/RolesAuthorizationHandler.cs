@@ -17,27 +17,15 @@ namespace Project_PRN221.CustomHandler
 				context.Fail();
 				return Task.CompletedTask;
 			}
+			var claims = context.User.Claims;
 			bool validRole = false;
-			if (requirement.AllowedRoles == null || !requirement.AllowedRoles.Any())
+			var role = claims.FirstOrDefault(c => c.Type.Equals(ClaimTypes.Role));
+			if (role != null)
 			{
-				validRole = false;
-			}
-			else
-			{
-				var claims = context.User.Claims;
-				var role = (claims.FirstOrDefault(c => c.Type.Equals(ClaimTypes.Role))).ToString();
-
-				if (role != null)
+				var roles = requirement.AllowedRoles;
+				if (roles.Contains(role.Value))
 				{
-					var roles = requirement.AllowedRoles;
-					if (string.IsNullOrEmpty(role) && roles.Contains(role))
-					{
-						validRole = true;
-					}
-					else
-					{
-						validRole = false;
-					}
+					validRole = true;
 				}
 			}
 

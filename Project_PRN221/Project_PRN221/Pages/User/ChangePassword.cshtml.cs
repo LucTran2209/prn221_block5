@@ -10,8 +10,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Project_PRN221.Pages.User
 {
-/*	[Authorize(Roles = "User, Admin")]
-*/	public class ChangePasswordModel : PageModel
+	[Authorize(Roles = "User, Admin")]
+	public class ChangePasswordModel : PageModel
 	{
 		private readonly PROJECT_SENT_DOCUMENTContext _context;
 		public ChangePasswordModel(PROJECT_SENT_DOCUMENTContext context)
