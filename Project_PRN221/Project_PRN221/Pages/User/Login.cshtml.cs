@@ -36,12 +36,14 @@ namespace Project_PRN221.Pages.User
 					string email = account.Email;
                     string fullName = account.FullName;
                     string role = account.Role.RoleName;
+					string phone = account.Phone;
 
                     var accountClaims = new List<Claim>()
                     {
                         new Claim(ClaimTypes.Email, email),
                         new Claim(ClaimTypes.Name, fullName),
-                        new Claim(ClaimTypes.Role, role)
+                        new Claim(ClaimTypes.Role, role),
+						new Claim(ClaimTypes.MobilePhone, phone)
                     };
                     var accountIdentity = new ClaimsIdentity(accountClaims, "Account Identity");
                     var accountPrincipal = new ClaimsPrincipal(new[] { accountIdentity });

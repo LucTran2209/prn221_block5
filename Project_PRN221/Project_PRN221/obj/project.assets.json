@@ -10920,11 +10920,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block5\\Project_PRN221\\Project_PRN221\\Project_PRN221.csproj",
+      "projectUniqueName": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\Project_PRN221.csproj",
       "projectName": "Project_PRN221",
-      "projectPath": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block5\\Project_PRN221\\Project_PRN221\\Project_PRN221.csproj",
+      "projectPath": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\Project_PRN221.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block5\\Project_PRN221\\Project_PRN221\\obj\\",
+      "outputPath": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

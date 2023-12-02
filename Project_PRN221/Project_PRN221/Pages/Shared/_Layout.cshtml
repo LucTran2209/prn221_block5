@@ -167,28 +167,14 @@
 			<div class="close-btn">
 				<span class="lnr lnr-cross" id="close-icon"></span>
 			</div>
-			<a href="/index">
-				<img src="~/images/logo-2-menu-sidebar.png" alt="" />
-			</a>
-			<p class="text">Et harum quidem rerum facilis est et expedita distinctio nam libero.</p>
-			<!-- SLIDER -->
-			<div class="owl-carousel owl-theme image-slider style-1" id="image-carousel">
-				<div class="item">
-					<a href="#">
-						<img src='~/images/menu-sidebar-slide-1.jpg' alt="" />
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<img src='~/images/menu-sidebar-slide-2.jpg' alt="" />
-					</a>
-				</div>
-				<div class="item">
-					<a href="#">
-						<img src='~/images/menu-sidebar-slide-3.jpg' alt="" />
-					</a>
-				</div>
-			</div>
+			@if (User.Identity.IsAuthenticated)
+								{
+
+				<p >Họ tên: @User.FindFirstValue(ClaimTypes.Name)</p>
+				<p >Số điên thoại: @User.FindFirstValue(ClaimTypes.MobilePhone)</p>
+				<p >Email: @User.FindFirstValue(ClaimTypes.Email)</p>
+				<a href="/User/ChangePassword">Đổi mật khẩu</a>
+								}
 			<!-- CONTACT -->
 			<div class="contact-part">
 				<div class="contact-line">
