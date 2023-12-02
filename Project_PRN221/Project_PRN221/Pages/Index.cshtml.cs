@@ -8,8 +8,8 @@ namespace Project_PRN221.Pages
 {
 	public class IndexModel : PageModel
 	{
-		//private readonly PizzaShopDbContext _context;
-		//public IndexModel(PizzaShopDbContext context)
+		//private readonly PROJECT_SENT_DOCUMENTContext _context;
+		//public IndexModel(PROJECT_SENT_DOCUMENTContext context)
 		//{
 		//	_context = context;
 		//}
