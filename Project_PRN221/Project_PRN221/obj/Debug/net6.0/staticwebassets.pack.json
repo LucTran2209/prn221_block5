@@ -1,1047 +1,1047 @@
 {
   "Files": [
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Project_PRN221.bundle.scp.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Project_PRN221.bundle.scp.css",
       "PackagePath": "staticwebassets\\Project_PRN221.bundle.scp.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\animate.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\animate.css",
       "PackagePath": "staticwebassets\\css\\animate.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\site.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\style.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\style.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\style.css.map",
       "PackagePath": "staticwebassets\\css\\style.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\style.scss",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\style.scss",
       "PackagePath": "staticwebassets\\css\\style.scss"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\styleAdmin.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\css\\styleAdmin.css",
       "PackagePath": "staticwebassets\\css\\styleAdmin.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\favicon.ico",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\alex_brush\\AlexBrush-Regular.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\alex_brush\\AlexBrush-Regular.ttf",
       "PackagePath": "staticwebassets\\fonts\\alex_brush\\AlexBrush-Regular.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\alex_brush\\OFL.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\alex_brush\\OFL.txt",
       "PackagePath": "staticwebassets\\fonts\\alex_brush\\OFL.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\amatic_sc\\AmaticSC-Bold.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\amatic_sc\\AmaticSC-Bold.ttf",
       "PackagePath": "staticwebassets\\fonts\\amatic_sc\\AmaticSC-Bold.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\amatic_sc\\AmaticSC-Regular.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\amatic_sc\\AmaticSC-Regular.ttf",
       "PackagePath": "staticwebassets\\fonts\\amatic_sc\\AmaticSC-Regular.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\amatic_sc\\OFL.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\amatic_sc\\OFL.txt",
       "PackagePath": "staticwebassets\\fonts\\amatic_sc\\OFL.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\bitter\\Bitter-Bold.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\bitter\\Bitter-Bold.ttf",
       "PackagePath": "staticwebassets\\fonts\\bitter\\Bitter-Bold.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\bitter\\Bitter-Italic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\bitter\\Bitter-Italic.ttf",
       "PackagePath": "staticwebassets\\fonts\\bitter\\Bitter-Italic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\bitter\\Bitter-Regular.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\bitter\\Bitter-Regular.ttf",
       "PackagePath": "staticwebassets\\fonts\\bitter\\Bitter-Regular.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\bitter\\OFL.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\bitter\\OFL.txt",
       "PackagePath": "staticwebassets\\fonts\\bitter\\OFL.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\calibri\\Calibri-Bold-Italic.TTF",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\calibri\\Calibri-Bold-Italic.TTF",
       "PackagePath": "staticwebassets\\fonts\\calibri\\Calibri-Bold-Italic.TTF"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\calibri\\Calibri-Bold.TTF",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\calibri\\Calibri-Bold.TTF",
       "PackagePath": "staticwebassets\\fonts\\calibri\\Calibri-Bold.TTF"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\calibri\\Calibri-Italic.TTF",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\calibri\\Calibri-Italic.TTF",
       "PackagePath": "staticwebassets\\fonts\\calibri\\Calibri-Italic.TTF"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\calibri\\Calibri.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\calibri\\Calibri.ttf",
       "PackagePath": "staticwebassets\\fonts\\calibri\\Calibri.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\calibri\\sharefonts.net.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\calibri\\sharefonts.net.txt",
       "PackagePath": "staticwebassets\\fonts\\calibri\\sharefonts.net.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\constantia\\Constanb.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\constantia\\Constanb.ttf",
       "PackagePath": "staticwebassets\\fonts\\constantia\\Constanb.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\constantia\\Constantia.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\constantia\\Constantia.ttf",
       "PackagePath": "staticwebassets\\fonts\\constantia\\Constantia.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\constantia\\constanb.png",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\constantia\\constanb.png",
       "PackagePath": "staticwebassets\\fonts\\constantia\\constanb.png"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\constantia\\sharefonts.net.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\constantia\\sharefonts.net.txt",
       "PackagePath": "staticwebassets\\fonts\\constantia\\sharefonts.net.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\css\\fontawesome-all.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\css\\fontawesome-all.min.css",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\css\\fontawesome-all.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.eot",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.eot",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.eot"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.svg",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.svg",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.svg"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.woff",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.woff",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.woff"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.woff2",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.eot",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.eot",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.eot"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.svg",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.svg",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.svg"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.woff",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.woff",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.woff"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.woff2",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.eot",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.eot",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.eot"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.svg",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.svg",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.svg"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.woff",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.woff",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.woff"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.woff2",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\fonts\\font-awesome-5\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\georgia\\Georgia-Bold.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\georgia\\Georgia-Bold.ttf",
       "PackagePath": "staticwebassets\\fonts\\georgia\\Georgia-Bold.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\georgia\\Georgia.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\georgia\\Georgia.ttf",
       "PackagePath": "staticwebassets\\fonts\\georgia\\Georgia.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\great_vibes\\GreatVibes-Regular.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\great_vibes\\GreatVibes-Regular.ttf",
       "PackagePath": "staticwebassets\\fonts\\great_vibes\\GreatVibes-Regular.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\great_vibes\\OFL.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\great_vibes\\OFL.txt",
       "PackagePath": "staticwebassets\\fonts\\great_vibes\\OFL.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\julius_sans_one\\JuliusSansOne-Regular.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\julius_sans_one\\JuliusSansOne-Regular.ttf",
       "PackagePath": "staticwebassets\\fonts\\julius_sans_one\\JuliusSansOne-Regular.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\julius_sans_one\\OFL.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\julius_sans_one\\OFL.txt",
       "PackagePath": "staticwebassets\\fonts\\julius_sans_one\\OFL.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Black.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Black.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-Black.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-BlackItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-BlackItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-BlackItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Bold.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Bold.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-Bold.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-BoldItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-BoldItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-BoldItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Hairline.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Hairline.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-Hairline.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-HairlineItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-HairlineItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-HairlineItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Heavy.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Heavy.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-Heavy.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-HeavyItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-HeavyItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-HeavyItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Italic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Italic.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-Italic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Light.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Light.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-Light.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-LightItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-LightItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-LightItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Medium.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Medium.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-Medium.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-MediumItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-MediumItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-MediumItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Regular.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Regular.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-Regular.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Semibold.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Semibold.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-Semibold.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-SemiboldItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-SemiboldItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-SemiboldItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Thin.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-Thin.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-Thin.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-ThinItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\Lato-ThinItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\lato\\Lato-ThinItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\SIL Open Font License.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\lato\\SIL Open Font License.txt",
       "PackagePath": "staticwebassets\\fonts\\lato\\SIL Open Font License.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\css\\line-awesome-font-awesome.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\css\\line-awesome-font-awesome.css",
       "PackagePath": "staticwebassets\\fonts\\line-awesome\\css\\line-awesome-font-awesome.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\css\\line-awesome-font-awesome.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\css\\line-awesome-font-awesome.min.css",
       "PackagePath": "staticwebassets\\fonts\\line-awesome\\css\\line-awesome-font-awesome.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\css\\line-awesome.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\css\\line-awesome.css",
       "PackagePath": "staticwebassets\\fonts\\line-awesome\\css\\line-awesome.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\css\\line-awesome.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\css\\line-awesome.min.css",
       "PackagePath": "staticwebassets\\fonts\\line-awesome\\css\\line-awesome.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\fonts\\line-awesome.eot",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\fonts\\line-awesome.eot",
       "PackagePath": "staticwebassets\\fonts\\line-awesome\\fonts\\line-awesome.eot"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\fonts\\line-awesome.svg",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\fonts\\line-awesome.svg",
       "PackagePath": "staticwebassets\\fonts\\line-awesome\\fonts\\line-awesome.svg"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\fonts\\line-awesome.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\fonts\\line-awesome.ttf",
       "PackagePath": "staticwebassets\\fonts\\line-awesome\\fonts\\line-awesome.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\fonts\\line-awesome.woff",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\fonts\\line-awesome.woff",
       "PackagePath": "staticwebassets\\fonts\\line-awesome\\fonts\\line-awesome.woff"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\fonts\\line-awesome.woff2",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\line-awesome\\fonts\\line-awesome.woff2",
       "PackagePath": "staticwebassets\\fonts\\line-awesome\\fonts\\line-awesome.woff2"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\Read Me.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\Read Me.txt",
       "PackagePath": "staticwebassets\\fonts\\linearicons\\Read Me.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\fonts\\Linearicons-Free.eot",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\fonts\\Linearicons-Free.eot",
       "PackagePath": "staticwebassets\\fonts\\linearicons\\fonts\\Linearicons-Free.eot"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\fonts\\Linearicons-Free.svg",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\fonts\\Linearicons-Free.svg",
       "PackagePath": "staticwebassets\\fonts\\linearicons\\fonts\\Linearicons-Free.svg"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\fonts\\Linearicons-Free.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\fonts\\Linearicons-Free.ttf",
       "PackagePath": "staticwebassets\\fonts\\linearicons\\fonts\\Linearicons-Free.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\fonts\\Linearicons-Free.woff",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\fonts\\Linearicons-Free.woff",
       "PackagePath": "staticwebassets\\fonts\\linearicons\\fonts\\Linearicons-Free.woff"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\fonts\\Linearicons-Free.woff2",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\fonts\\Linearicons-Free.woff2",
       "PackagePath": "staticwebassets\\fonts\\linearicons\\fonts\\Linearicons-Free.woff2"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\selection.json",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\selection.json",
       "PackagePath": "staticwebassets\\fonts\\linearicons\\selection.json"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\style.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\linearicons\\style.css",
       "PackagePath": "staticwebassets\\fonts\\linearicons\\style.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.css",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.min.css",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\css\\material-design-iconic-font.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.eot"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.svg"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2",
       "PackagePath": "staticwebassets\\fonts\\material-design-iconic-font\\fonts\\Material-Design-Iconic-Font.woff2"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\mvboli\\mvboli.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\mvboli\\mvboli.ttf",
       "PackagePath": "staticwebassets\\fonts\\mvboli\\mvboli.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\pacifico\\OFL.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\pacifico\\OFL.txt",
       "PackagePath": "staticwebassets\\fonts\\pacifico\\OFL.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\pacifico\\Pacifico-Regular.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\pacifico\\Pacifico-Regular.ttf",
       "PackagePath": "staticwebassets\\fonts\\pacifico\\Pacifico-Regular.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\OFL.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\OFL.txt",
       "PackagePath": "staticwebassets\\fonts\\raleway\\OFL.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Black.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Black.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-Black.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-BlackItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-BlackItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-BlackItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Bold.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Bold.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-Bold.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-BoldItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-BoldItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-BoldItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-ExtraBold.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-ExtraBold.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-ExtraBold.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-ExtraBoldItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-ExtraBoldItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-ExtraBoldItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-ExtraLight.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-ExtraLight.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-ExtraLight.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-ExtraLightItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-ExtraLightItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-ExtraLightItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Italic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Italic.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-Italic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Light.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Light.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-Light.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-LightItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-LightItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-LightItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Medium.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Medium.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-Medium.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-MediumItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-MediumItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-MediumItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Regular.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Regular.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-Regular.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-SemiBold.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-SemiBold.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-SemiBold.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-SemiBoldItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-SemiBoldItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-SemiBoldItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Thin.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-Thin.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-Thin.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-ThinItalic.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\raleway\\Raleway-ThinItalic.ttf",
       "PackagePath": "staticwebassets\\fonts\\raleway\\Raleway-ThinItalic.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\sacramento\\OFL.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\sacramento\\OFL.txt",
       "PackagePath": "staticwebassets\\fonts\\sacramento\\OFL.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\sacramento\\Sacramento-Regular.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\sacramento\\Sacramento-Regular.ttf",
       "PackagePath": "staticwebassets\\fonts\\sacramento\\Sacramento-Regular.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\satisfy\\LICENSE.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\satisfy\\LICENSE.txt",
       "PackagePath": "staticwebassets\\fonts\\satisfy\\LICENSE.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\satisfy\\Satisfy-Regular.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\fonts\\satisfy\\Satisfy-Regular.ttf",
       "PackagePath": "staticwebassets\\fonts\\satisfy\\Satisfy-Regular.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery-3.3.1.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery.countdown.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery.countdown.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.countdown.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery.counterup.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery.counterup.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.counterup.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery.vide.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery.vide.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.vide.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery.waypoints.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery.waypoints.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.waypoints.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\main.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\main.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\main.min.js",
       "PackagePath": "staticwebassets\\js\\main.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
       "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\site.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\sweetalert.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\sweetalert.min.js",
       "PackagePath": "staticwebassets\\js\\sweetalert.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\wow.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\wow.min.js",
       "PackagePath": "staticwebassets\\js\\wow.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\bootstrap\\bootstrap.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\bootstrap\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\vendor\\bootstrap\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\circle-progress\\circle-progress.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\circle-progress\\circle-progress.js",
       "PackagePath": "staticwebassets\\vendor\\circle-progress\\circle-progress.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\circle-progress\\circle-progress.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\circle-progress\\circle-progress.min.js",
       "PackagePath": "staticwebassets\\vendor\\circle-progress\\circle-progress.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\circle-progress\\jquery.waypoints.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\circle-progress\\jquery.waypoints.min.js",
       "PackagePath": "staticwebassets\\vendor\\circle-progress\\jquery.waypoints.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\date-picker\\datepicker.en.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\date-picker\\datepicker.en.js",
       "PackagePath": "staticwebassets\\vendor\\date-picker\\datepicker.en.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\date-picker\\datepicker.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\date-picker\\datepicker.js",
       "PackagePath": "staticwebassets\\vendor\\date-picker\\datepicker.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\date-picker\\datepicker.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\date-picker\\datepicker.min.css",
       "PackagePath": "staticwebassets\\vendor\\date-picker\\datepicker.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\elevatezoom-master\\README.md",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\elevatezoom-master\\README.md",
       "PackagePath": "staticwebassets\\vendor\\elevatezoom-master\\README.md"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\elevatezoom-master\\jquery-1.8.3.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\elevatezoom-master\\jquery-1.8.3.min.js",
       "PackagePath": "staticwebassets\\vendor\\elevatezoom-master\\jquery-1.8.3.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\elevatezoom-master\\jquery.elevateZoom-3.0.8.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\elevatezoom-master\\jquery.elevateZoom-3.0.8.min.js",
       "PackagePath": "staticwebassets\\vendor\\elevatezoom-master\\jquery.elevateZoom-3.0.8.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\elevatezoom-master\\jquery.elevatezoom.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\elevatezoom-master\\jquery.elevatezoom.js",
       "PackagePath": "staticwebassets\\vendor\\elevatezoom-master\\jquery.elevatezoom.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\flipster\\jquery.flipster.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\flipster\\jquery.flipster.css",
       "PackagePath": "staticwebassets\\vendor\\flipster\\jquery.flipster.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\flipster\\jquery.flipster.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\flipster\\jquery.flipster.min.css",
       "PackagePath": "staticwebassets\\vendor\\flipster\\jquery.flipster.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\flipster\\jquery.flipster.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\flipster\\jquery.flipster.min.js",
       "PackagePath": "staticwebassets\\vendor\\flipster\\jquery.flipster.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\fullpage\\jquery.fullPage.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\fullpage\\jquery.fullPage.css",
       "PackagePath": "staticwebassets\\vendor\\fullpage\\jquery.fullPage.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\fullpage\\jquery.fullPage.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\fullpage\\jquery.fullPage.js",
       "PackagePath": "staticwebassets\\vendor\\fullpage\\jquery.fullPage.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\hcmobilenav\\demo.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\hcmobilenav\\demo.css",
       "PackagePath": "staticwebassets\\vendor\\hcmobilenav\\demo.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\hcmobilenav\\hc-mobile-nav.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\hcmobilenav\\hc-mobile-nav.js",
       "PackagePath": "staticwebassets\\vendor\\hcmobilenav\\hc-mobile-nav.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\css\\reset.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\css\\reset.css",
       "PackagePath": "staticwebassets\\vendor\\horizontal-timeline-master\\css\\reset.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\css\\style.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\css\\style.css",
       "PackagePath": "staticwebassets\\vendor\\horizontal-timeline-master\\css\\style.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\img\\cd-arrow.svg",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\img\\cd-arrow.svg",
       "PackagePath": "staticwebassets\\vendor\\horizontal-timeline-master\\img\\cd-arrow.svg"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\js\\jquery-2.1.4.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\js\\jquery-2.1.4.js",
       "PackagePath": "staticwebassets\\vendor\\horizontal-timeline-master\\js\\jquery-2.1.4.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\js\\jquery.mobile.custom.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\js\\jquery.mobile.custom.min.js",
       "PackagePath": "staticwebassets\\vendor\\horizontal-timeline-master\\js\\jquery.mobile.custom.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\js\\main.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\js\\main.js",
       "PackagePath": "staticwebassets\\vendor\\horizontal-timeline-master\\js\\main.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\js\\modernizr.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\horizontal-timeline-master\\js\\modernizr.js",
       "PackagePath": "staticwebassets\\vendor\\horizontal-timeline-master\\js\\modernizr.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\jquery-timepicker-master\\jquery.timepicker.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\jquery-timepicker-master\\jquery.timepicker.css",
       "PackagePath": "staticwebassets\\vendor\\jquery-timepicker-master\\jquery.timepicker.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\jquery-timepicker-master\\jquery.timepicker.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\jquery-timepicker-master\\jquery.timepicker.min.js",
       "PackagePath": "staticwebassets\\vendor\\jquery-timepicker-master\\jquery.timepicker.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\jquery-ui\\jquery-ui.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\jquery-ui\\jquery-ui.min.css",
       "PackagePath": "staticwebassets\\vendor\\jquery-ui\\jquery-ui.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\jquery-ui\\jquery-ui.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\jquery-ui\\jquery-ui.min.js",
       "PackagePath": "staticwebassets\\vendor\\jquery-ui\\jquery-ui.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\css\\lightgallery.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\css\\lightgallery.min.css",
       "PackagePath": "staticwebassets\\vendor\\lightgallery\\css\\lightgallery.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\fonts\\lg.eot",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\fonts\\lg.eot",
       "PackagePath": "staticwebassets\\vendor\\lightgallery\\fonts\\lg.eot"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\fonts\\lg.svg",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\fonts\\lg.svg",
       "PackagePath": "staticwebassets\\vendor\\lightgallery\\fonts\\lg.svg"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\fonts\\lg.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\fonts\\lg.ttf",
       "PackagePath": "staticwebassets\\vendor\\lightgallery\\fonts\\lg.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\fonts\\lg.woff",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\fonts\\lg.woff",
       "PackagePath": "staticwebassets\\vendor\\lightgallery\\fonts\\lg.woff"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\img\\loading.gif",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\img\\loading.gif",
       "PackagePath": "staticwebassets\\vendor\\lightgallery\\img\\loading.gif"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\img\\video-play.png",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\img\\video-play.png",
       "PackagePath": "staticwebassets\\vendor\\lightgallery\\img\\video-play.png"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\img\\vimeo-play.png",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\img\\vimeo-play.png",
       "PackagePath": "staticwebassets\\vendor\\lightgallery\\img\\vimeo-play.png"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\img\\youtube-play.png",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\img\\youtube-play.png",
       "PackagePath": "staticwebassets\\vendor\\lightgallery\\img\\youtube-play.png"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\js\\jquery.mousewheel.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\js\\jquery.mousewheel.min.js",
       "PackagePath": "staticwebassets\\vendor\\lightgallery\\js\\jquery.mousewheel.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\js\\lightgallery-all.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\lightgallery\\js\\lightgallery-all.min.js",
       "PackagePath": "staticwebassets\\vendor\\lightgallery\\js\\lightgallery-all.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\modal-video\\modal-video.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\modal-video\\modal-video.min.css",
       "PackagePath": "staticwebassets\\vendor\\modal-video\\modal-video.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\modal-video\\modal-video.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\modal-video\\modal-video.min.js",
       "PackagePath": "staticwebassets\\vendor\\modal-video\\modal-video.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.easing.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.easing.min.js",
       "PackagePath": "staticwebassets\\vendor\\multiscroll\\jquery.easing.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.css",
       "PackagePath": "staticwebassets\\vendor\\multiscroll\\jquery.multiscroll.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.extensions.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.extensions.min.js",
       "PackagePath": "staticwebassets\\vendor\\multiscroll\\jquery.multiscroll.extensions.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.js",
       "PackagePath": "staticwebassets\\vendor\\multiscroll\\jquery.multiscroll.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.min.css",
       "PackagePath": "staticwebassets\\vendor\\multiscroll\\jquery.multiscroll.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.min.css.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.min.css.map",
       "PackagePath": "staticwebassets\\vendor\\multiscroll\\jquery.multiscroll.min.css.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.min.js",
       "PackagePath": "staticwebassets\\vendor\\multiscroll\\jquery.multiscroll.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.min.js.map",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\multiscroll\\jquery.multiscroll.min.js.map",
       "PackagePath": "staticwebassets\\vendor\\multiscroll\\jquery.multiscroll.min.js.map"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\nouislider\\nouislider.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\nouislider\\nouislider.min.css",
       "PackagePath": "staticwebassets\\vendor\\nouislider\\nouislider.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\nouislider\\nouislider.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\nouislider\\nouislider.min.js",
       "PackagePath": "staticwebassets\\vendor\\nouislider\\nouislider.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\owl-carousel\\css\\owl.carousel.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\owl-carousel\\css\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\vendor\\owl-carousel\\css\\owl.carousel.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\owl-carousel\\css\\owl.theme.default.min.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\owl-carousel\\css\\owl.theme.default.min.css",
       "PackagePath": "staticwebassets\\vendor\\owl-carousel\\css\\owl.theme.default.min.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\owl-carousel\\js\\jquery.mousewheel.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\owl-carousel\\js\\jquery.mousewheel.min.js",
       "PackagePath": "staticwebassets\\vendor\\owl-carousel\\js\\jquery.mousewheel.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\owl-carousel\\js\\owl.carousel.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\owl-carousel\\js\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\vendor\\owl-carousel\\js\\owl.carousel.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\owl-carousel\\js\\owl.carousel2.thumbs.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\owl-carousel\\js\\owl.carousel2.thumbs.min.js",
       "PackagePath": "staticwebassets\\vendor\\owl-carousel\\js\\owl.carousel2.thumbs.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\assets\\loader.gif",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\assets\\loader.gif",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\assets\\loader.gif"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\css\\layers.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\css\\layers.css",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\css\\layers.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\css\\navigation.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\css\\navigation.css",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\css\\navigation.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\css\\settings.css",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\css\\settings.css",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\css\\settings.css"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\fonts\\revicons\\revicons.ttf",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\fonts\\revicons\\revicons.ttf",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\fonts\\revicons\\revicons.ttf"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\fonts\\revicons\\revicons.woff",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\fonts\\revicons\\revicons.woff",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\fonts\\revicons\\revicons.woff"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\jquery.themepunch.revolution.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\jquery.themepunch.revolution.min.js",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\js\\jquery.themepunch.revolution.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\jquery.themepunch.tools.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\jquery.themepunch.tools.min.js",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\js\\jquery.themepunch.tools.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.actions.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.actions.min.js",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\js\\revolution.extension.actions.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.carousel.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.carousel.min.js",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\js\\revolution.extension.carousel.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.kenburn.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.kenburn.min.js",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\js\\revolution.extension.kenburn.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.layeranimation.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.layeranimation.min.js",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\js\\revolution.extension.layeranimation.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.migration.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.migration.min.js",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\js\\revolution.extension.migration.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.navigation.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.navigation.min.js",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\js\\revolution.extension.navigation.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.parallax.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.parallax.min.js",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\js\\revolution.extension.parallax.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.slideanims.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.slideanims.min.js",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\js\\revolution.extension.slideanims.min.js"
     },
     {
-      "Id": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.video.min.js",
+      "Id": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block6\\Project_PRN221\\Project_PRN221\\wwwroot\\vendor\\revolution-slider\\js\\revolution.extension.video.min.js",
       "PackagePath": "staticwebassets\\vendor\\revolution-slider\\js\\revolution.extension.video.min.js"
     },
     {

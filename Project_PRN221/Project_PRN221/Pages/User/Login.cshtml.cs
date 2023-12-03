@@ -40,10 +40,10 @@ namespace Project_PRN221.Pages.User
 
                     var accountClaims = new List<Claim>()
                     {
-                        new Claim(ClaimTypes.Email, email),
-                        new Claim(ClaimTypes.Name, fullName),
-                        new Claim(ClaimTypes.Role, role),
-						new Claim(ClaimTypes.MobilePhone, phone)
+                        new Claim(ClaimTypes.Email, account.Email),
+                        new Claim(ClaimTypes.Name, account.FullName),
+                        new Claim(ClaimTypes.Role, account.Role.RoleName),
+						new Claim(ClaimTypes.MobilePhone, account.Phone)
                     };
                     var accountIdentity = new ClaimsIdentity(accountClaims, "Account Identity");
                     var accountPrincipal = new ClaimsPrincipal(new[] { accountIdentity });

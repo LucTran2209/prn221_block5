@@ -6,6 +6,8 @@ using System.Text.Json;
 
 namespace Project_PRN221.Pages
 {
+	[Authorize(Roles = "User, Admin")]
+
 	public class IndexModel : PageModel
 	{
 		//private readonly PROJECT_SENT_DOCUMENTContext _context;
