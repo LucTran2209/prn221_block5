@@ -1,0 +1,152 @@
+﻿@page
+@model Project_PRN221.Pages.Documents.SendDocumentModel
+@{
+}
+<section class="section-primary pt-150 pb-113 shop-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sorting">
+                    <form method="get" class="woocommerce-ordering">
+                        <div class="woocommerce-result-count">
+                            Tìm kiếm văn bản
+                        </div>
+
+                        <div class="form-holder">
+
+                            <select id="sortSelect" name="orderby" class="orderby form-control">
+                                <option value="">Lĩnh vực</option>
+                                <option value="asc">Sort: low to high</option>
+                                <option value="desc">Sort: high to low</option>
+                            </select>
+                            <span class="lnr lnr-chevron-down"></span>
+                        </div>
+
+                        <div class="form-holder">
+                            <select id="sortSelect" name="orderby" class="orderby form-control">
+
+                                <option value=""> Cơ quan ban hành</option>
+                                <option value="asc">Sort: low to high</option>
+                                <option value="desc">Sort: high to low</option>
+                            </select>
+                            <span class="lnr lnr-chevron-down"></span>
+                        </div>
+                        <div class="form-holder">
+                            <select id="sortSelect" name="orderby" class="orderby form-control">
+
+                                <option value="">Năm ban hành</option>
+                                <option value="asc">Sort: low to high</option>
+                                <option value="desc">Sort: high to low</option>
+                            </select>
+                            <span class="lnr lnr-chevron-down"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="row products">
+                    <table class="table search-result" cellspacing="0" rules="all" border="1" id="ctrl_191017_163_grvDocument" style="border-style:None;width:100%;border-collapse:collapse;">
+                        <tbody>
+                            <tr>
+                                <th class="CodeClass" scope="col">Số ký hiệu</th>
+                                <th scope="col">Ngày ban hành</th>
+                                <th scope="col">Trích yếu</th>
+                                <th scope="col">Đơn vị nhận</th>
+                                <th scope="col">Ngày gửi</th>
+                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/?pageid=27160&amp;docid=209071">
+                                        <span class="code">1275/TTg-NN</span>
+                                        <span class="issue-v2">01/12/2023</span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <span class="issued-date">01/12/2023</span>
+                                </td>
+                                <td>
+                                    <a href="/?pageid=27160&amp;docid=209071">
+                                        <span class="substract">V/v chuyển mục đích sử dụng đất trồng lúa sang mục đích khác để thực hiện Dự án Đường kết nối đê bao ven biển với cầu Thứ Ba tại huyện An Biên, tỉnh Kiên Giang</span>
+                                    </a>
+                                    <div class="bl-issue-date">
+                                        <span class="issued-date issued-date-inside">01/12/2023</span>
+                                    </div>
+                                    <div class="bl-doc-files">
+
+                                        <div class="bl-doc-file"><a href="https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/12/1275-nn.signed.pdf" target="_blank" download="">Tài liệu đính kèm</a></div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="issued-date">Cán bộ Lực</span>
+                                </td>
+                                <td>
+                                    <span class="issued-date">01/12/2023</span>
+                                </td>
+                                
+                            </tr>
+                    </table>
+
+                </div>
+                <div class="woocommerce-pagination">
+                    @*<ul class="page-numbers">
+                    <li>
+                    @if (pageNum == 1)
+                    {
+                    <a href="/products/menu?PageNum=@prev" hidden="hidden" class="page-numbers prev">
+                    <span class="lnr lnr-arrow-left"></span>
+                    </a>
+                    }
+                    else
+                    {
+                    <a href="/products/menu?PageNum=@prev" class="page-numbers prev">
+                    <span class="lnr lnr-arrow-left"></span>
+                    </a>
+                    }
+                    </li>
+                    @for (var i = 1; i <= total; i++)
+                    {
+                    @if (pageNum == i)
+                    {
+                    <li>
+                    <span class="page-numbers current"><a href="/products/menu?PageNum=@i">@i</a></span>
+                    </li>
+                    }
+                    else
+                    {
+                    <li>
+                    <a href="/products/menu?PageNum=@i" class="page-numbers inactive">@i</a>
+                    </li>
+                    }
+                    }
+                    <li>
+                    @if (pageNum == total)
+                    {
+                    <a href="/products/menu?PageNum=@next" hidden="hidden" class="page-numbers next">
+                    <span class="lnr lnr-arrow-right"></span>
+                    </a>
+                    }
+                    else
+                    {
+                    <a href="/products/menu?PageNum=@next" class="page-numbers next">
+                    <span class="lnr lnr-arrow-right"></span>
+                    </a>
+                    }
+                    </li>
+                    </ul>*@
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<script>
+    document.getElementById("sortSelect").addEventListener("change", function () {
+        var selectedSort = this.value;
+
+        var currentUrl = window.location.href;
+        var url = new URL(currentUrl);
+        url.searchParams.set("sort", selectedSort);
+
+        window.location.href = url;
+    });
+</script>
