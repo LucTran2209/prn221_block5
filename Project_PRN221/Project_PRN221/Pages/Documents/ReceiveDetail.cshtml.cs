@@ -26,9 +26,8 @@ namespace Project_PRN221.Pages.Documents
             {
                 return NotFound();
             }
-            string email = User.FindFirstValue(ClaimTypes.Email);
-            var account = await _context.Users.SingleOrDefaultAsync(acc => acc.Email.Equals(email));
-            var sendDocument =await _context.SendDocuments.FirstOrDefaultAsync(sd=>sd.UserIdReceive == account.UserId && sd.DocumentId == id);
+            string userId = User.FindFirstValue("AccountId");
+            var sendDocument =await _context.SendDocuments.FirstOrDefaultAsync(sd=>sd.UserIdReceive == int.Parse(userId) && sd.DocumentId == id);
             var document = await _context.Documents.Include(d=>d.User).Include(d=>d.Agence).FirstOrDefaultAsync(d=>d.DocumentId == id);
             if (document == null || sendDocument == null)
             {

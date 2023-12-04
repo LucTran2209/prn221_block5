@@ -40,6 +40,7 @@ namespace Project_PRN221.Pages.User
 
                     var accountClaims = new List<Claim>()
                     {
+                        new Claim("AccountId", account.UserId.ToString()),
                         new Claim(ClaimTypes.Email, account.Email),
                         new Claim(ClaimTypes.Name, account.FullName),
                         new Claim(ClaimTypes.Role, account.Role.RoleName),

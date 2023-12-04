@@ -30,11 +30,10 @@ namespace Project_PRN221.Pages.Documents
         public async Task<IActionResult> OnGetAsync(int? categoryId, int? userID, DateTime? startDate, DateTime? endDate)
         {
             LoadForm();
-            string email = User.FindFirstValue(ClaimTypes.Email);
-            var account = await _context.Users.SingleOrDefaultAsync(acc => acc.Email.Equals(email));
+            string userId = User.FindFirstValue("AccountId");
             documents = _context.SendDocuments
                 .Include(d => d.Document).Include(d=>d.UserIdSendNavigation)
-                .Where(d => d.UserIdReceive == account.UserId)
+                .Where(d => d.UserIdReceive == int.Parse(userId))
                 .OrderBy(d => d.IsRead).ThenBy(d => d.SentDate).ToList();
             if (categoryId != null) {CategoryID = categoryId.Value; documents = documents.Where(d => d.Document.CategoryId == categoryId).ToList(); }
             if (userID != null) { UserID = userID.Value; documents = documents.Where(d => d.UserIdSend == userID).ToList(); }
