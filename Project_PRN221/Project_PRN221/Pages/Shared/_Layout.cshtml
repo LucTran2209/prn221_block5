@@ -169,6 +169,7 @@
 			</div>
 			@if (User.Identity.IsAuthenticated)
 								{
+									 <p>@User.FindFirstValue("AccountId")</p>
 
 				<p >Họ tên: @User.FindFirstValue(ClaimTypes.Name)</p>
 				<p >Số điên thoại: @User.FindFirstValue(ClaimTypes.MobilePhone)</p>

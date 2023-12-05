@@ -45,7 +45,8 @@ namespace Project_PRN221.Pages.User
                         new Claim(ClaimTypes.Role, account.Role.RoleName),
 						new Claim(ClaimTypes.MobilePhone, account.Phone)
                     };
-                    var accountIdentity = new ClaimsIdentity(accountClaims, "Account Identity");
+
+					var accountIdentity = new ClaimsIdentity(accountClaims, "Account Identity");
                     var accountPrincipal = new ClaimsPrincipal(new[] { accountIdentity });
                     HttpContext.SignInAsync(accountPrincipal);
                     return RedirectToPage("/Index");

@@ -41,6 +41,7 @@ builder.Services.AddAuthorization(config =>
 
 builder.Services.AddScoped<IAuthorizationHandler, PoliciesAuthorizationHandler>();
 builder.Services.AddScoped<IAuthorizationHandler, RolesAuthorizationHandler>();
+builder.Services.AddDistributedMemoryCache();
 
 var app = builder.Build();
 
@@ -57,6 +58,7 @@ app.UseSession();
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseSession();
 
 app.MapRazorPages();
 

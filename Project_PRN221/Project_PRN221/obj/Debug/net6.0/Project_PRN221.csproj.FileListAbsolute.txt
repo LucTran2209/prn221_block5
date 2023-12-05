@@ -1253,3 +1253,8 @@ D:\PRN221\Block5\ProjectPRN221Block5\Project_PRN221\Project_PRN221\obj\Debug\net
 D:\PRN221\Block5\ProjectPRN221Block5\Project_PRN221\Project_PRN221\obj\Debug\net6.0\Project_PRN221.pdb
 D:\PRN221\Block5\ProjectPRN221Block5\Project_PRN221\Project_PRN221\obj\Debug\net6.0\Project_PRN221.genruntimeconfig.cache
 D:\PRN221\Block5\ProjectPRN221Block5\Project_PRN221\Project_PRN221\obj\Debug\net6.0\ref\Project_PRN221.dll
+C:\Users\win\Desktop\PRN221_Block5\Project_PRN221\Project_PRN221\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\win\Desktop\PRN221_Block5\Project_PRN221\Project_PRN221\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\win\Desktop\PRN221_Block5\Project_PRN221\Project_PRN221\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\win\Desktop\PRN221_Block5\Project_PRN221\Project_PRN221\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\win\Desktop\PRN221_Block5\Project_PRN221\Project_PRN221\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll

@@ -1,4 +1,5 @@
 ﻿@page
+@using System.Security.Claims;
 @model Project_PRN221.Pages.Documents.ReceiveDocumentModel
 @{
 }
@@ -9,8 +10,10 @@
                 <div class="sorting">
                     <form method="get" class="woocommerce-ordering">
                         <div class="woocommerce-result-count">
-                            Tìm kiếm văn bản
+                            Tìm kiếm văn bản <p>@User.FindFirstValue("AccountId")</p>
                         </div>
+                        <p>
+                            @User.FindFirstValue("AccountId")</
 
                         <div class="form-holder">
                             <span>Thể loại</span>
