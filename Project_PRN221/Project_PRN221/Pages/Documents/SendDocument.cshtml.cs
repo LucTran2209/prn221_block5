@@ -21,8 +21,6 @@ namespace Project_PRN221.Pages.Documents
         [BindProperty]
         public SendDocument Send { get; set; }
 
-   
-
         public async Task OnGetAsync()
         {
 
