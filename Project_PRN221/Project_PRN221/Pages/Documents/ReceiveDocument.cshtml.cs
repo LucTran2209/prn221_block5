@@ -17,17 +17,18 @@ namespace Project_PRN221.Pages.Documents
             _context = context;
         }
 
-        [BindProperty]
+        public string DoccumentNumber { get; set; }
         public int CategoryID { get; set; }
-        [BindProperty]
-        public int UserID { get; set; }
+        public string HumanSign {  get; set; }
+        public string Username { get; set; }
+        public string Title { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; } = DateTime.Now;
 
         [BindProperty]
         public List<SendDocument> documents {  get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? categoryId, int? userID, DateTime? startDate, DateTime? endDate)
+        public async Task<IActionResult> OnGetAsync(string? doccumentNumber, int? categoryId, string? humanSign, DateTime? startDate, DateTime? endDate, string? username, string? title)
         {
             LoadForm();
             string userId = User.FindFirstValue("AccountId");
@@ -35,10 +36,13 @@ namespace Project_PRN221.Pages.Documents
                 .Include(d => d.Document).Include(d=>d.UserIdSendNavigation)
                 .Where(d => d.UserIdReceive == int.Parse(userId))
                 .OrderBy(d => d.IsRead).ThenBy(d => d.SentDate).ToList();
+            if (doccumentNumber != null) {documents = documents.Where(d => d.Document.DocumentNumber.ToLower().Contains(doccumentNumber.ToLower())).ToList(); }
             if (categoryId != null) {CategoryID = categoryId.Value; documents = documents.Where(d => d.Document.CategoryId == categoryId).ToList(); }
-            if (userID != null) { UserID = userID.Value; documents = documents.Where(d => d.UserIdSend == userID).ToList(); }
+            if (humanSign != null) { documents = documents.Where(d => d.Document.HumanSign.ToLower().Contains(humanSign.ToLower())).ToList(); }
             if (startDate != null) { StartDate = startDate.Value; documents = documents.Where(d => d.SentDate >= startDate).ToList(); }
             if (endDate != null) { EndDate = endDate.Value;  documents = documents.Where(d => d.SentDate <= endDate).ToList(); }
+            if (username != null) { documents = documents.Where(d => d.UserIdSendNavigation.FullName.ToLower().Contains(username.ToLower())).ToList(); }
+            if (title != null) { documents = documents.Where(d => d.Document.Title.ToLower().Contains(title.ToLower())).ToList(); }
             return Page();
         }
 

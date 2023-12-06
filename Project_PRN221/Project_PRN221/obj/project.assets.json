@@ -10950,24 +10950,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\Project_PRN221.csproj",
+      "projectUniqueName": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block5\\Project_PRN221\\Project_PRN221\\Project_PRN221.csproj",
       "projectName": "Project_PRN221",
-      "projectPath": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\Project_PRN221.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\PRN221\\Block5\\ProjectPRN221Block5\\Project_PRN221\\Project_PRN221\\obj\\",
+      "projectPath": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block5\\Project_PRN221\\Project_PRN221\\Project_PRN221.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "D:\\Study\\2023_9_Fall\\PRN221\\Demo\\prn221_block5\\Project_PRN221\\Project_PRN221\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10975,7 +10970,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11050,7 +11044,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

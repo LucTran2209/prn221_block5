@@ -7,38 +7,77 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="sorting">
+                    <div class="woocommerce-result-count font-weight-bold" style="font-family: Merriweather;font-size: 40px;">
+                        Tìm kiếm văn bản
+
+                    </div>
                     <form method="get" class="woocommerce-ordering">
-                        <div class="woocommerce-result-count">
-                            Tìm kiếm văn bản
-                        </div>
-
-                        <div class="form-holder">
-                            <span>Thể loại</span>
-                            <select asp-for="@Model.CategoryID" asp-items="ViewBag.CategoryID" class="orderby form-control">
-                                <option value="-1">Thể loại</option>
-
-                            </select>
-                            <span class="lnr lnr-chevron-down"></span>
-                        </div>
-
-                        <div class="form-holder">
-                            <span>Đơn vị gửi</span>
-                            <select asp-for="@Model.UserID" asp-items="ViewBag.UserID" class="orderby form-control">
-
-                                <option value="-1">Đơn vị gửi</option>
-                            </select>
-                            <span class="lnr lnr-chevron-down"></span>
-                        </div>
-                        <div class="form-holder">
-                            <span>Ngày nhận</span>
-                            <input type="date" asp-for="@Model.StartDate" />
-                            <input type="date" asp-for="@Model.EndDate" />
-                        </div>
-                        <div class="form-holder">
-                            <input type="submit" class="woocommerce-Button button au-btn round has-bg" name="login" value="Tìm kiếm">
-                        </div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <span>Văn bản số</span>
+                                    <div class="widget_search">
+                                        <input class="form-control" type="text" asp-for="@Model.DoccumentNumber" id="txtSearch" placeholder="Enter document name to search">
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>Loại văn bản</span>
+                                    <div class="form-holder">
+                                        <select id="sortSelect1" asp-for="@Model.CategoryID" asp-items="ViewBag.CategoryID" class="orderby form-control" style="width:100%">
+                                            <option value="">All</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>Người ký văn bản</span>
+                                    <div class="form-holder">
+                                        <div class="widget_search">
+                                            <input class="form-control" type="text" asp-for="@Model.HumanSign" id="txtSearch" placeholder="Enter document name to search">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Từ ngày</span>
+                                    <div class="form-holder">
+                                        <div class="widget_search">
+                                            <input class="form-control" type="date" asp-for="@Model.StartDate" id="txtSearch" placeholder="Enter document name to search">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>Đến ngày</span>
+                                    <div class="form-holder">
+                                        <div class="widget_search">
+                                            <input class="form-control" type="date" asp-for="@Model.EndDate" id="txtSearch" placeholder="Enter document name to search">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span>Người gửi</span>
+                                    <div class="widget_search">
+                                        <input class="form-control" type="text" asp-for="@Model.Username" id="txtSearch" placeholder="Enter document name to search">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Title</span>
+                                    <div class="widget_search">
+                                        <input class="form-control" type="text" asp-for="@Model.Title" id="txtSearch" placeholder="Enter document name to search">
+                                    </div>
+                                </td>
+                                <td colspan="3">
+                                    <div class="form-holder" style=" margin-top: 20px;width:100%">
+                                        <input type="submit" class="woocommerce-Button button au-btn round has-bg" name="login" value="Tìm kiếm">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </form>
                 </div>
+                
                 <div class="row products">
                     <table class="table search-result" cellspacing="0" rules="all" border="1" id="ctrl_191017_163_grvDocument" style="border-style:None;width:100%;border-collapse:collapse;">
                         <tbody>
@@ -46,7 +85,7 @@
                                 <th class="CodeClass" scope="col">Số ký hiệu</th>
                                 <th scope="col">Ngày ban hành</th>
                                 <th scope="col">Trích yếu</th>
-                                <th scope="col">Đơn vị gửi</th>
+                                <th scope="col">Người gửi</th>
                                 <th scope="col">Ngày nhận</th>
                                 <th scope="col"></th>
                             </tr>
