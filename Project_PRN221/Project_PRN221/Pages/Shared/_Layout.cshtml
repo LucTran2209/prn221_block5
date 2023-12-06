@@ -1,5 +1,7 @@
 ﻿@using System.Security.Claims;
-
+@{
+    var isLoginPage = IsCurrentPage("/User/Login");
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,124 +66,125 @@
             <span></span>
         </div>
     </div>
-
-    <header>
-        <!-- HEADER ON DESKTOP -->
-        <nav class="navbar-desktop" style="background:black">
-            <div class="left">
-                <a href="/index" class="logo">
-                    <img src="~/images/logo-2.png" alt="Royate" />
-                </a>
-            </div>
-            <ul>
-                <li class="@IsCurrentPage("/Index")">
-                    <a href="/Index">
-                        Trang chủ
+    @if (isLoginPage==null)
+    {
+        <header>
+            <!-- HEADER ON DESKTOP -->
+            <nav class="navbar-desktop" style="background:black">
+                <div class="left">
+                    <a href="/index" class="logo">
+                        <img src="~/images/logo-2.png" alt="Royate" />
                     </a>
-                </li>
-                <li class="@IsCurrentPage("/Documents/SendDocument")">
-                    <a href="/Documents/SendDocument">
-                        Văn bản gửi
-                    </a>
-                </li>
-                <li class="@IsCurrentPage("/Documents/ReceiveDocument")">
-                    <a href="/Documents/ReceiveDocument">
-                        Văn bản nhận
-                    </a>
-                </li>
-                <li class="has-children">
-                    <a href="#">
-                        Tài khoản
-                    </a>
-                    <div class="sub-menu">
-                        <div class="wrapper">
-                            <ul>
-                                @if (User.Identity.IsAuthenticated)
-                                {
-                                    string role = User.FindFirstValue(ClaimTypes.Role);
-                                    string name = User.FindFirstValue(ClaimTypes.Name);
-                                    <li>
-                                        <a href="#">Xin chào, @name]</a>
-                                    </li>
-                                    @if (role.Equals("Admin"))
+                </div>
+                <ul>
+                    <li class="@IsCurrentPage("/Index")">
+                        <a href="/Index">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="@IsCurrentPage("/Documents/SendDocument")">
+                        <a href="/Documents/SendDocument">
+                            Văn bản gửi
+                        </a>
+                    </li>
+                    <li class="@IsCurrentPage("/Documents/ReceiveDocument")">
+                        <a href="/Documents/ReceiveDocument">
+                            Văn bản nhận
+                        </a>
+                    </li>
+                    <li class="has-children">
+                        <a href="#">
+                            Tài khoản
+                        </a>
+                        <div class="sub-menu">
+                            <div class="wrapper">
+                                <ul>
+                                    @if (User.Identity.IsAuthenticated)
                                     {
-                                    //Chức năng Admin
+                                        string role = User.FindFirstValue(ClaimTypes.Role);
+                                        string name = User.FindFirstValue(ClaimTypes.Name);
                                         <li>
-                                            <a href="/Products/Menu">
-                                                Quản lý tài khoản
-                                            </a>
+                                            <a href="#">Xin chào, @name]</a>
+                                        </li>
+                                        @if (role.Equals("Admin"))
+                                        {
+                                            //Chức năng Admin
+                                            <li>
+                                                <a href="/Products/Menu">
+                                                    Quản lý tài khoản
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/Products/Menu">
+                                                    Thống kê văn bản
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/Categories">
+                                                    Quản lý loại văn bản
+                                                </a>
+                                            </li>
+                                        }
+                                        <li>
+                                            <a href="/user/logout">Đăng xuất</a>
+                                        </li>
+
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            <a href="/User/Login">Đăng nhập</a>
                                         </li>
                                         <li>
-                                            <a href="/Products/Menu">
-                                                Thống kê văn bản
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/Categories">
-                                                Quản lý loại văn bản
-                                            </a>
+                                            <a href="/User/Register">Đăng ký</a>
                                         </li>
                                     }
-                                    <li>
-                                        <a href="/user/logout">Đăng xuất</a>
-                                    </li>
-
-                                }
-                                else
-                                {
-                                    <li>
-                                        <a href="/User/Login">Đăng nhập</a>
-                                    </li>
-                                    <li>
-                                        <a href="/User/Register">Đăng ký</a>
-                                    </li>
-                                }
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
+                    </li>
+                </ul>
+                <div class="right">
+                    <div class="action">
+                        <div class="notify">
+                            <a href="/Tasks/shop_cart"> <img src="~/images/notify.png" alt="" /></a>
+                        </div>
+                        <span class="lnr lnr-magnifier search-icon" data-toggle="modal" data-target="#modalSearch"></span>
+                        <span class="lnr lnr-menu menu-sidebar-icon"></span>
                     </div>
-                </li>
-            </ul>
-            <div class="right">
-                <div class="action">
-                    <div class="notify">
-                        <a href="/Tasks/shop_cart"> <img src="~/images/notify.png" alt="" /></a>
+                </div>
+            </nav>
+
+            <!-- MODAL SEARCH -->
+            <div class="modal-search modal" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form method="get">
+                            <input type="text" placeholder="Search">
+                            <button>
+                                <span class="lnr lnr-magnifier"></span>
+                            </button>
+                        </form>
                     </div>
-                    <span class="lnr lnr-magnifier search-icon" data-toggle="modal" data-target="#modalSearch"></span>
-                    <span class="lnr lnr-menu menu-sidebar-icon"></span>
                 </div>
+                <span class="lnr lnr-cross" data-toggle="modal" data-target="#modalSearch"></span>
             </div>
-        </nav>
 
-        <!-- MODAL SEARCH -->
-        <div class="modal-search modal" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <form method="get">
-                        <input type="text" placeholder="Search">
-                        <button>
-                            <span class="lnr lnr-magnifier"></span>
-                        </button>
-                    </form>
+            <!-- MENU SIDEBAR -->
+            <div class="menu-sidebar">
+                <div class="close-btn">
+                    <span class="lnr lnr-cross" id="close-icon"></span>
                 </div>
-            </div>
-            <span class="lnr lnr-cross" data-toggle="modal" data-target="#modalSearch"></span>
-        </div>
+                @if (User.Identity.IsAuthenticated)
+                {
 
-        <!-- MENU SIDEBAR -->
-        <div class="menu-sidebar">
-            <div class="close-btn">
-                <span class="lnr lnr-cross" id="close-icon"></span>
-            </div>
-            @if (User.Identity.IsAuthenticated)
-            {
-
-                <p>ID: @User.FindFirstValue("AccountId")</p>
-                <p>Họ tên: @User.FindFirstValue(ClaimTypes.Name)</p>
-                <p>Số điên thoại: @User.FindFirstValue(ClaimTypes.MobilePhone)</p>
-                <p>Email: @User.FindFirstValue(ClaimTypes.Email)</p>
-                <a href="/User/ChangePassword">Đổi mật khẩu</a>
-            }
-            <!-- CONTACT -->
+                    <p>ID: @User.FindFirstValue("AccountId")</p>
+                    <p>Họ tên: @User.FindFirstValue(ClaimTypes.Name)</p>
+                    <p>Số điên thoại: @User.FindFirstValue(ClaimTypes.MobilePhone)</p>
+                    <p>Email: @User.FindFirstValue(ClaimTypes.Email)</p>
+                    <a href="/User/ChangePassword">Đổi mật khẩu</a>
+                }
+                <!-- CONTACT -->
             <div class="contact-part">
                 <div class="contact-line">
                     <span class="lnr lnr-home"></span>
@@ -218,6 +221,7 @@
         </div>
 
     </header>
+    }
     <main role="main" class="pb-3">
         @RenderBody()
     </main>
