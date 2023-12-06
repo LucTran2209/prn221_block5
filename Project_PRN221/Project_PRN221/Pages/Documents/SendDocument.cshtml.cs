@@ -19,7 +19,7 @@ namespace Project_PRN221.Pages.Documents
         public List<SendDocumentDto> ListDocument { get; set; }
 
         [BindProperty]
-        public SendDocument Send { get; set; }
+        public SendDocument Send { get; set; } 
 
         public async Task OnGetAsync()
         {

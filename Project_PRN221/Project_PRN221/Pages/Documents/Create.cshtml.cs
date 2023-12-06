@@ -41,6 +41,7 @@ namespace Project_PRN221.Pages.Documents
 						await FileInput.CopyToAsync(memoryStream);
 						byte[] bytes = memoryStream.ToArray();
 						string base64String = Convert.ToBase64String(bytes);
+
 						document.Content = base64String;
 					}
 				}
