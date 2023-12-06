@@ -17,9 +17,12 @@ namespace Project_PRN221.Pages.User
 	public class LoginModel : PageModel
 	{
 		private readonly PROJECT_SENT_DOCUMENTContext _context;
-		public LoginModel(PROJECT_SENT_DOCUMENTContext context)
+		private readonly IWebHostEnvironment _hostingEnvironment;
+
+        public LoginModel(PROJECT_SENT_DOCUMENTContext context, IWebHostEnvironment hostingEnvironment)
 		{
 			_context = context;
+			_hostingEnvironment = hostingEnvironment;
 		}
 		[BindProperty]
 		public Models.User Account { get; set; }
@@ -37,14 +40,20 @@ namespace Project_PRN221.Pages.User
                     string fullName = account.FullName;
                     string role = account.Role.RoleName;
 					string phone = account.Phone;
+					string avatar = account.Avatar;
+
+                    byte[] imageBytes = Convert.FromBase64String(avatar);
+                    string imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", $"{account.UserId}.png");
+                    System.IO.File.WriteAllBytes(imagePath, imageBytes);
+                    HttpContext.Session.SetString("AvatarPath", $"/images/{account.UserId}.png");
 
                     var accountClaims = new List<Claim>()
                     {
                         new Claim("AccountId", account.UserId.ToString()),
-                        new Claim(ClaimTypes.Email, account.Email),
-                        new Claim(ClaimTypes.Name, account.FullName),
-                        new Claim(ClaimTypes.Role, account.Role.RoleName),
-						new Claim(ClaimTypes.MobilePhone, account.Phone)
+                        new Claim(ClaimTypes.Email,email),
+                        new Claim(ClaimTypes.Name, fullName),
+                        new Claim(ClaimTypes.Role, role),
+						new Claim(ClaimTypes.MobilePhone, phone)
                     };
                     var accountIdentity = new ClaimsIdentity(accountClaims, "Account Identity");
                     var accountPrincipal = new ClaimsPrincipal(new[] { accountIdentity });

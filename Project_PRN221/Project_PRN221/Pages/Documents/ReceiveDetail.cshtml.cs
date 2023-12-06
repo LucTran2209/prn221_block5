@@ -28,6 +28,12 @@ namespace Project_PRN221.Pages.Documents
             }
             string userId = User.FindFirstValue("AccountId");
             var sendDocument =await _context.SendDocuments.FirstOrDefaultAsync(sd=>sd.UserIdReceive == int.Parse(userId) && sd.DocumentId == id);
+            if(sendDocument.IsRead == false)
+            {
+                sendDocument.IsRead = true;
+                _context.SendDocuments.Update(sendDocument);
+                await _context.SaveChangesAsync();
+            }
             var document = await _context.Documents.Include(d=>d.User).Include(d=>d.Category).FirstOrDefaultAsync(d=>d.DocumentId == id);
             if (document == null || sendDocument == null)
             {

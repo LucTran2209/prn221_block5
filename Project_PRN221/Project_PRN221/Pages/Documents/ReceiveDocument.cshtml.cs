@@ -24,9 +24,10 @@ namespace Project_PRN221.Pages.Documents
         public string Title { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; } = DateTime.Now;
+        public bool? IsRead { get; set; } = null;
         public List<SendDocument> documents {  get; set; }
 
-        public async Task<IActionResult> OnGetAsync(string? doccumentNumber, int? categoryId, string? humanSign, DateTime? startDate, DateTime? endDate, string? username, string? title)
+        public async Task<IActionResult> OnGetAsync(string? doccumentNumber, int? categoryId, string? humanSign, DateTime? startDate, DateTime? endDate, string? username, string? title, bool? isRead)
         {
             LoadForm();
             string userId = User.FindFirstValue("AccountId");
@@ -41,6 +42,8 @@ namespace Project_PRN221.Pages.Documents
             if (endDate != null) {query = query.Where(d => d.SentDate <= endDate); }
             if (username != null) { query = query.Where(d => d.UserIdSendNavigation.FullName.ToLower().Contains(username.ToLower())); }
             if (title != null) { query = query.Where(d => d.Document.Title.ToLower().Contains(title.ToLower())); }
+            if (isRead != null) { query = query.Where(d => d.IsRead == isRead); }
+
             documents = query.ToList();
             return Page();
         }

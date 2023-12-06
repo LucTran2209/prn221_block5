@@ -70,7 +70,7 @@
     {
         <header>
             <!-- HEADER ON DESKTOP -->
-            <nav class="navbar-desktop" style="background:black">
+            <nav class="navbar-desktop fixed" style="background:black">
                 <div class="left">
                     <a href="/index" class="logo">
                         <img src="~/images/logo-2.png" alt="Royate" />
@@ -177,8 +177,7 @@
                 </div>
                 @if (User.Identity.IsAuthenticated)
                 {
-
-                    <p>ID: @User.FindFirstValue("AccountId")</p>
+                    <img src="@Context.Session.GetString("AvatarPath")" alt="Ảnh đại diện" />
                     <p>Họ tên: @User.FindFirstValue(ClaimTypes.Name)</p>
                     <p>Số điên thoại: @User.FindFirstValue(ClaimTypes.MobilePhone)</p>
                     <p>Email: @User.FindFirstValue(ClaimTypes.Email)</p>
