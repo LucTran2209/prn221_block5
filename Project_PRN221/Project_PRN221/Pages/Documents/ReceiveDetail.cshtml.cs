@@ -28,7 +28,7 @@ namespace Project_PRN221.Pages.Documents
             }
             string userId = User.FindFirstValue("AccountId");
             var sendDocument =await _context.SendDocuments.FirstOrDefaultAsync(sd=>sd.UserIdReceive == int.Parse(userId) && sd.DocumentId == id);
-            var document = await _context.Documents.Include(d=>d.User).Include(d=>d.Agence).FirstOrDefaultAsync(d=>d.DocumentId == id);
+            var document = await _context.Documents.Include(d=>d.User).FirstOrDefaultAsync(d=>d.DocumentId == id);
             if (document == null || sendDocument == null)
             {
                 return NotFound();

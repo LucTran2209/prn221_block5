@@ -19,7 +19,6 @@ namespace Project_PRN221.Models
         public virtual DbSet<Agence> Agences { get; set; } = null!;
         public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<Document> Documents { get; set; } = null!;
-        public virtual DbSet<Notification> Notifications { get; set; } = null!;
         public virtual DbSet<Role> Roles { get; set; } = null!;
         public virtual DbSet<SendDocument> SendDocuments { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
@@ -61,12 +60,6 @@ namespace Project_PRN221.Models
 
                 entity.Property(e => e.Title).HasMaxLength(50);
 
-                entity.HasOne(d => d.Agence)
-                    .WithMany(p => p.Documents)
-                    .HasForeignKey(d => d.AgenceId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Documents_Agences");
-
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Documents)
                     .HasForeignKey(d => d.CategoryId)
@@ -78,13 +71,6 @@ namespace Project_PRN221.Models
                     .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Documents_Users");
-            });
-
-            modelBuilder.Entity<Notification>(entity =>
-            {
-                entity.HasKey(e => e.Notifications);
-
-                entity.Property(e => e.Notifications).ValueGeneratedNever();
             });
 
             modelBuilder.Entity<Role>(entity =>
@@ -150,6 +136,11 @@ namespace Project_PRN221.Models
                 entity.Property(e => e.UserName)
                     .HasMaxLength(50)
                     .IsUnicode(false);
+
+                entity.HasOne(d => d.Agence)
+                    .WithMany(p => p.Users)
+                    .HasForeignKey(d => d.AgenceId)
+                    .HasConstraintName("FK_Users_Agences");
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.Users)

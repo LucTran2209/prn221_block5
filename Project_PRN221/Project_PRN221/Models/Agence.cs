@@ -7,12 +7,12 @@ namespace Project_PRN221.Models
     {
         public Agence()
         {
-            Documents = new HashSet<Document>();
+            Users = new HashSet<User>();
         }
 
         public int AgenceId { get; set; }
         public string AgenceName { get; set; } = null!;
 
-        public virtual ICollection<Document> Documents { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }
