@@ -1504,3 +1504,4 @@ C:\Users\win\Desktop\PRN221_Block5\Clone_PRN_BL5_1\Project_PRN221\Project_PRN221
 C:\Users\win\Desktop\PRN221_Block5\Clone_PRN_BL5_1\Project_PRN221\Project_PRN221\obj\Debug\net6.0\Project_PRN221.pdb
 C:\Users\win\Desktop\PRN221_Block5\Clone_PRN_BL5_1\Project_PRN221\Project_PRN221\obj\Debug\net6.0\Project_PRN221.genruntimeconfig.cache
 C:\Users\win\Desktop\PRN221_Block5\Clone_PRN_BL5_1\Project_PRN221\Project_PRN221\obj\Debug\net6.0\ref\Project_PRN221.dll
+D:\PRN221\Block5\ProjectPRN221Block5\Project_PRN221\Project_PRN221\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
