@@ -24,25 +24,24 @@ namespace Project_PRN221.Pages.Documents
         public string Title { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; } = DateTime.Now;
-
-        [BindProperty]
         public List<SendDocument> documents {  get; set; }
 
         public async Task<IActionResult> OnGetAsync(string? doccumentNumber, int? categoryId, string? humanSign, DateTime? startDate, DateTime? endDate, string? username, string? title)
         {
             LoadForm();
             string userId = User.FindFirstValue("AccountId");
-            documents = _context.SendDocuments
+            var query = _context.SendDocuments
                 .Include(d => d.Document).Include(d=>d.UserIdSendNavigation)
                 .Where(d => d.UserIdReceive == int.Parse(userId))
-                .OrderBy(d => d.IsRead).ThenBy(d => d.SentDate).ToList();
-            if (doccumentNumber != null) {documents = documents.Where(d => d.Document.DocumentNumber.ToLower().Contains(doccumentNumber.ToLower())).ToList(); }
-            if (categoryId != null) {CategoryID = categoryId.Value; documents = documents.Where(d => d.Document.CategoryId == categoryId).ToList(); }
-            if (humanSign != null) { documents = documents.Where(d => d.Document.HumanSign.ToLower().Contains(humanSign.ToLower())).ToList(); }
-            if (startDate != null) { StartDate = startDate.Value; documents = documents.Where(d => d.SentDate >= startDate).ToList(); }
-            if (endDate != null) { EndDate = endDate.Value;  documents = documents.Where(d => d.SentDate <= endDate).ToList(); }
-            if (username != null) { documents = documents.Where(d => d.UserIdSendNavigation.FullName.ToLower().Contains(username.ToLower())).ToList(); }
-            if (title != null) { documents = documents.Where(d => d.Document.Title.ToLower().Contains(title.ToLower())).ToList(); }
+                .OrderBy(d => d.IsRead).ThenBy(d => d.SentDate).AsQueryable();
+            if (doccumentNumber != null) { query = query.Where(d => d.Document.DocumentNumber.ToLower().Contains(doccumentNumber.ToLower())); }
+            if (categoryId != null) { query = query.Where(d => d.Document.CategoryId == categoryId); }
+            if (humanSign != null) { query = query.Where(d => d.Document.HumanSign.ToLower().Contains(humanSign.ToLower())); }
+            if (startDate != null) {query = query.Where(d => d.SentDate >= startDate); }
+            if (endDate != null) {query = query.Where(d => d.SentDate <= endDate); }
+            if (username != null) { query = query.Where(d => d.UserIdSendNavigation.FullName.ToLower().Contains(username.ToLower())); }
+            if (title != null) { query = query.Where(d => d.Document.Title.ToLower().Contains(title.ToLower())); }
+            documents = query.ToList();
             return Page();
         }
 

@@ -20,15 +20,14 @@
                                 <td>
                                     <span>Văn bản số</span>
                                     <div class="widget_search">
-                                        <input class="form-control" type="text" name="search" id="txtSearch" placeholder="Enter document name to search" value="@ViewData["txtSearch"]">
+                                        <input class="form-control" type="text" asp-for="@Model.DoccumentNumber" id="txtSearch" placeholder="Enter document name to search">
                                     </div>
                                 </td>
                                 <td>
                                     <span>Loại văn bản</span>
                                     <div class="form-holder">
-                                        <select id="sortSelect1" name="orderby" class="orderby form-control" style="width:100%">
-                                            <option value="">Thể loại</option>
-                                            <option value="asc">All</option>
+                                        <select id="sortSelect1" asp-for="@Model.CategoryID" asp-items="ViewBag.CategoryID" class="orderby form-control" style="width:100%">
+                                            <option value="">All</option>
                                         </select>
                                     </div>
                                 </td>
@@ -36,7 +35,7 @@
                                     <span>Người ký văn bản</span>
                                     <div class="form-holder">
                                         <div class="widget_search">
-                                            <input class="form-control" type="text" name="search" id="txtSearch" placeholder="Enter document name to search" value="@ViewData["txtSearch"]">
+                                            <input class="form-control" type="text" asp-for="@Model.HumanSign" id="txtSearch" placeholder="Enter document name to search">
                                         </div>
                                     </div>
                                 </td>
@@ -46,7 +45,7 @@
                                     <span>Từ ngày</span>
                                     <div class="form-holder">
                                         <div class="widget_search">
-                                            <input class="form-control" type="date" name="search" id="txtSearch" placeholder="Enter document name to search" value="@ViewData["txtSearch"]">
+                                            <input class="form-control" type="date" asp-for="@Model.StartDate" id="txtSearch" placeholder="Enter document name to search">
                                         </div>
                                     </div>
                                 </td>
@@ -54,14 +53,14 @@
                                     <span>Đến ngày</span>
                                     <div class="form-holder">
                                         <div class="widget_search">
-                                            <input class="form-control" type="date" name="search" id="txtSearch" placeholder="Enter document name to search" value="@ViewData["txtSearch"]">
+                                            <input class="form-control" type="date" asp-for="@Model.EndDate" id="txtSearch" placeholder="Enter document name to search">
                                         </div>
                                     </div>
                                 </td>
                                 <td>
-                                    <span>Người tạo</span>
+                                    <span>Người nhận</span>
                                     <div class="widget_search">
-                                        <input class="form-control" type="text" name="search" id="txtSearch" placeholder="Enter document name to search" value="@ViewData["txtSearch"]">
+                                        <input class="form-control" type="text" asp-for="@Model.Username" id="txtSearch" placeholder="Enter document name to search">
                                     </div>
                                 </td>
                             </tr>
@@ -69,7 +68,7 @@
                                 <td>
                                     <span>Title</span>
                                     <div class="widget_search">
-                                        <input class="form-control" type="text" name="search" id="txtSearch" placeholder="Enter document name to search" value="@ViewData["txtSearch"]">
+                                        <input class="form-control" type="text" asp-for="@Model.Title" id="txtSearch" placeholder="Enter document name to search">
                                     </div>
                                 </td>
                                 <td colspan="3">
