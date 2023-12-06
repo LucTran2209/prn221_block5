@@ -20,7 +20,9 @@ namespace Project_PRN221.Models
         public string? Phone { get; set; }
         public string? Avatar { get; set; }
         public int RoleId { get; set; }
+        public int? AgenceId { get; set; }
 
+        public virtual Agence? Agence { get; set; }
         public virtual Role Role { get; set; } = null!;
         public virtual ICollection<Document> Documents { get; set; }
         public virtual ICollection<SendDocument> SendDocumentUserIdReceiveNavigations { get; set; }
