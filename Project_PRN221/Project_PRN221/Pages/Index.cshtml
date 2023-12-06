@@ -24,22 +24,7 @@
                 <a href="documents/create" class="btn btn-primary">
                     Thêm Văn bản
                 </a>
-                <style>
-                    .sorting table {
-                        width: 100%;
-                        border-collapse: collapse;
-                        border: 1px solid #ddd; /* Gray border */
-                    }
-
-                    .sorting td {
-                        padding: 8px;
-                       
-                    }
-
-                    .sorting .form-holder {
-                        width: 100%;
-                    }
-                </style>
+               
 
                 <div class="sorting">
                     <div class="woocommerce-result-count font-weight-bold" style="font-family: Merriweather;font-size: 40px;">
@@ -98,8 +83,14 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td>
+                                    <span>Title</span>
+                                    <div class="widget_search">
+                                        <input class="form-control" type="text" name="search" id="txtSearch" placeholder="Enter document name to search" value="@ViewData["txtSearch"]">
+                                    </div>
+                                </td>
                                 <td colspan="3">
-                                    <div class="form-holder">
+                                    <div class="form-holder" style=" margin-top: 20px;width:100%">
                                         <input type="submit" class="woocommerce-Button button au-btn round has-bg" name="login" value="Tìm kiếm">
                                     </div>
                                 </td>

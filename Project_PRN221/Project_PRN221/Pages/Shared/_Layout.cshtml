@@ -378,8 +378,23 @@
     <script src="~/vendor/jquery-timepicker-master/jquery.timepicker.min.js"></script>
 
     <script src="~/js/main.min.js"></script>
+    <style>
+        .sorting table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd; /* Gray border */
+        }
 
+        .sorting td {
+            padding: 8px;
+        }
+
+        .sorting .form-holder {
+            width: 100%;
+        }
+    </style>
 </body>
+
 </html>
 @functions {
     string IsCurrentPage(string page)
@@ -388,3 +403,4 @@
         return currentPage.Equals(page, StringComparison.OrdinalIgnoreCase) ? "current" : "";
     }
 }
+
