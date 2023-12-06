@@ -1253,3 +1253,4 @@ D:\PRN221\Block5\ProjectPRN221Block5\Project_PRN221\Project_PRN221\obj\Debug\net
 D:\PRN221\Block5\ProjectPRN221Block5\Project_PRN221\Project_PRN221\obj\Debug\net6.0\Project_PRN221.pdb
 D:\PRN221\Block5\ProjectPRN221Block5\Project_PRN221\Project_PRN221\obj\Debug\net6.0\Project_PRN221.genruntimeconfig.cache
 D:\PRN221\Block5\ProjectPRN221Block5\Project_PRN221\Project_PRN221\obj\Debug\net6.0\ref\Project_PRN221.dll
+D:\PRN221\Block5\ProjectPRN221Block5\Project_PRN221\Project_PRN221\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
