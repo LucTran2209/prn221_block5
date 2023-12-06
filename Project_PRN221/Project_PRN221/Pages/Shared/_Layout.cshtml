@@ -116,6 +116,11 @@
 												Thống kê văn bản
 											</a>
 										</li>
+										<li>
+											<a href="/Categories">
+												Quản lý loại văn bản
+											</a>
+										</li>
 									}
 									<li>
 										<a href="/user/logout">Đăng xuất</a>
@@ -170,6 +175,7 @@
 			@if (User.Identity.IsAuthenticated)
 								{
 
+				<p>ID: @User.FindFirstValue("AccountId")</p>
 				<p >Họ tên: @User.FindFirstValue(ClaimTypes.Name)</p>
 				<p >Số điên thoại: @User.FindFirstValue(ClaimTypes.MobilePhone)</p>
 				<p >Email: @User.FindFirstValue(ClaimTypes.Email)</p>
