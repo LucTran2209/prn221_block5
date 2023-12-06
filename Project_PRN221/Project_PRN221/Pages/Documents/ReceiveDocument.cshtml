@@ -7,12 +7,48 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="sorting">
+                    <p class="woocommerce-result-count">
+                        Tìm kiếm văn bản
+                    </p>
                     <form method="get" class="woocommerce-ordering">
-                        <div class="woocommerce-result-count">
-                            Tìm kiếm văn bản
-                        </div>
-
-                        <div class="form-holder">
+                        
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="form-holder">
+                                        <span>Thể loại</span>
+                                        <select asp-for="@Model.CategoryID" asp-items="ViewBag.CategoryID" class="orderby form-control">
+                                            <option value="-1">Thể loại</option>
+                                        </select>
+                                        <span class="lnr lnr-chevron-down"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-holder">
+                                        <span>Đơn vị gửi</span>
+                                        <select asp-for="@Model.UserID" asp-items="ViewBag.UserID" class="orderby form-control">
+                                            <option value="-1">Đơn vị gửi</option>
+                                        </select>
+                                        <span class="lnr lnr-chevron-down"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-holder">
+                                        <span>Ngày nhận</span>
+                                        <input type="date" asp-for="@Model.StartDate" />
+                                        <input type="date" asp-for="@Model.EndDate" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="form-holder">
+                                        <input type="submit" class="woocommerce-Button button au-btn round has-bg" name="login" value="Tìm kiếm">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                       @* <div class="form-holder">
                             <span>Thể loại</span>
                             <select asp-for="@Model.CategoryID" asp-items="ViewBag.CategoryID" class="orderby form-control">
                                 <option value="-1">Thể loại</option>
@@ -36,7 +72,7 @@
                         </div>
                         <div class="form-holder">
                             <input type="submit" class="woocommerce-Button button au-btn round has-bg" name="login" value="Tìm kiếm">
-                        </div>
+                        </div>*@
                     </form>
                 </div>
                 <div class="row products">

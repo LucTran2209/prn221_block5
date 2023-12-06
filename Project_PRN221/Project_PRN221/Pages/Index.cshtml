@@ -20,7 +20,7 @@
 <section class="section-primary pt-150 pb-113 shop-list">
     <div class="container">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="sorting">
                     <form method="get" class="woocommerce-ordering">
                         <div class="woocommerce-result-count">
@@ -56,6 +56,20 @@
                             </select>
                             <span class="lnr lnr-chevron-down"></span>
                         </div>
+                        <div class="form-holder">
+                            <select id="sortSelect" name="orderby" class="orderby form-control">
+                                
+                                <option value="">Năm ban hành</option>
+                                <option value="asc">Sort: low to high</option>
+                                <option value="desc">Sort: high to low</option>
+                            </select>
+                            <span class="lnr lnr-chevron-down"></span>
+                        </div>
+                        <div class="form-holder ">
+                            <input style="border:1px solid #e5e5e5" class="form-control" type="text" name="search" id="txtSearch" placeholder="Enter document name to search" value="@ViewData["txtSearch"] ">
+                            <span class="lnr lnr-chevron-down"></span>
+                        </div>
+
                     </form>
                 </div>
                 <div class="row products">
@@ -174,62 +188,7 @@
                     </ul>*@
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="sidebar">
-                    <!-- SEARCH -->
-                    <div class="widgets widget_search">
-                        <form method="get" class="search-form">
-                            <input class="form-control" type="text" name="search" id="txtSearch" placeholder="Enter document name to search" value="@ViewData["txtSearch"]">
-                            <button class="search-icon" id="btnSearch">
-                                <span class="lnr lnr-magnifier"></span>
-                            </button>
-                        </form>
-                    </div>
-                    @*<!-- FILTER -->
-                    <div class="widgets woocommerce widget_price_filter">
-                    <div class="widget-title">
-                    <h5>Filter by price</h5>
-                    </div>
-                    <form method="get">
-                    <div class="price_slider_wrapper">
-                    <div id="slider"></div>
-                    <div class="price_slider_amount">
-                    <div class="price_label">
-                    Price:
-                    <span class="from">
-                    $<span id="lower-value">@ViewData["FromPrice"]</span>
-                    </span> —
-                    <span class="to">
-                    $<span id="upper-value">@ViewData["ToPrice"]</span>
-                    </span>
-                    </div>
-                    <button type="submit" class="button">Filter</button>
-                    <button type="button" class="button" id="resetFiltersBtn">Reset Filters</button>
-                    </div>
-                    </div>
-                    </form>
-                    </div>*@
-                    <!-- CATEGORIES -->
-                    <div class="widgets widget_categories">
-                        <div class="widget-title">
-                            <h5>Loại văn bản</h5>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="/products/menu">All</a>
-                            </li>
-                            @*@foreach (var cate in Model.Category)
-                            {
-                            var productsInCategory = Model.Product.Count(p => p.CategoryId == cate.Id);
-                            <li>
-                            <a href="/products/menu?category=@cate.Id">@cate.CategoryName (<span>@cate.Products.Count</span>)</a>
-
-                            </li>
-                            }*@
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>
