@@ -1,0 +1,84 @@
+﻿@page
+@model Project_PRN221.Pages.Categories.IndexModel
+@{
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (ViewData["Message"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewData["Message"]
+    </div>
+}
+
+@if (ViewData["Error"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewData["Error"]
+    </div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label for="categoryName">Tên loại văn bản</label>
+        <input type="text" class="form-control" id="categoryName" name="categoryName" placeholder="Nhập tên loại văn bản" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Thêm loại văn bản mới</button>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>CategoryID</th>
+            <th>CategoryName</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model.Categories)
+        {
+            <tr>
+                <td>@category.CategoryId</td>
+                <form method="post" asp-page="Edit">
+                    <input type="hidden" name="id" value="@category.CategoryId">
+                    <td>
+                        <input type="text" disabled value="@category.CategoryName" name="categoryName" id="categoryName-@category.CategoryId" required/>
+                    </td>
+                    <td>
+                        <input type="submit" value="Edit" id="edit-button-@category.CategoryId" onclick="toggleInput(@category.CategoryId)"/>
+
+                    </td>
+                </form>
+                <td>
+                    <a asp-page="Delete" asp-route-id="@category.CategoryId" onclick="DeleteCategory(event, @category.CategoryId, @category.CategoryName)">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    // Nhận tham số id là id của category
+    function toggleInput(id) {
+        event.preventDefault();
+        var input = document.getElementById("categoryName-" + id);
+        if (input.disabled) {
+            input.disabled = false;
+        } else {
+            event.target.form.submit();
+        }
+    }
+
+    function DeleteCategory(event, id, name) {
+        event.preventDefault(); // Prevent the default action
+        var confirmation = confirm("Bạn có chắc chắn muốn xóa " + name + " này không?");
+        if (confirmation) {
+            window.location.href = event.target.href; // If confirmed, navigate to the link
+        }
+    }
+
+
+    
+</script>

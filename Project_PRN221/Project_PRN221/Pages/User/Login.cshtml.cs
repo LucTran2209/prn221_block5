@@ -41,12 +41,16 @@ namespace Project_PRN221.Pages.User
                     string role = account.Role.RoleName;
 					string phone = account.Phone;
 					string avatar = account.Avatar;
+					try
+					{
+                        byte[] imageBytes = Convert.FromBase64String(avatar);
+                        string imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", "avatar.png");
+                        System.IO.File.WriteAllBytes(imagePath, imageBytes);
+                    }catch(Exception ex)
+					{
 
-                    byte[] imageBytes = Convert.FromBase64String(avatar);
-                    string imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", $"{account.UserId}.png");
-                    System.IO.File.WriteAllBytes(imagePath, imageBytes);
-                    HttpContext.Session.SetString("AvatarPath", $"/images/{account.UserId}.png");
-
+					}
+                    HttpContext.Session.SetString("AvatarPath", $"/images/avatar.png");
                     var accountClaims = new List<Claim>()
                     {
                         new Claim("AccountId", account.UserId.ToString()),
