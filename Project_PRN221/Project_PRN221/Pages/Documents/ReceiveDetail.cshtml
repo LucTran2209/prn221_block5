@@ -34,7 +34,6 @@
                 <tr id="ctrl_190596_91_tr_ngaycohieuluc">
                     <td class="col1">Ngày nhận</td>
                     <td>
-                        // ngày nhận tự Senđoccument
                         @Model.SendDocument.SentDate
                     </td>
                 </tr>
@@ -48,7 +47,6 @@
                 <tr>
                     <td class="col1">Người gửi</td>
                     <td>
-                        // Người gửi
                         @Model.SendDocument.UserIdSendNavigation.FullName
                     </td>
                 </tr>
@@ -68,17 +66,16 @@
                     <td class="col1">Tài liệu đính kèm</td>
                     <td>
                         <div class="rp-file" style="display: flex">
-                            <a href="#" title="Tải về" style="color: #005594" target="_blank" class="view-file" id="toggleButton">
+                            <a href="#" title="Tải về" style="color: #005594" target="_blank" class="view-file">
                                 Tài liệu đính kèm
                             </a>
-                            <a style=""><i class="fa fa-eye" aria-hidden="true"></i></a>
+                            <a style=""><i class="fa fa-eye" aria-hidden="true" id="toggleButton"></i></a>
                         </div>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <div class="detail-file" id="imageDiv">
-            //chuyển ảnh thành String Base64 trước khi lưu vào db 
+        <div class="detail-file" id="imageDiv" style="display: none;">
             <img src="data:image/jpeg;base64,${@Model.Document.Content}" />
         </div>
     </div>
