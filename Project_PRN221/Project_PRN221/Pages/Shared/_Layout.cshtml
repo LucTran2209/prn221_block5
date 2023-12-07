@@ -70,7 +70,11 @@
     {
         <header>
             <!-- HEADER ON DESKTOP -->
+<<<<<<< HEAD
             <nav class="navbar-desktop" style="background:black">
+=======
+            <nav class="navbar-desktop fixed" style="background:black">
+>>>>>>> HoangTH
                 <div class="left">
                     <a href="/index" class="logo">
                         <img src="~/images/logo-2.png" alt="Royate" />
@@ -177,6 +181,7 @@
                 </div>
                 @if (User.Identity.IsAuthenticated)
                 {
+<<<<<<< HEAD
 
                     <p>ID: @User.FindFirstValue("AccountId")</p>
                     <p>Họ tên: @User.FindFirstValue(ClaimTypes.Name)</p>
@@ -378,8 +383,228 @@
     <script src="~/vendor/jquery-timepicker-master/jquery.timepicker.min.js"></script>
 
     <script src="~/js/main.min.js"></script>
+=======
+                    <img src="@Context.Session.GetString("AvatarPath")" alt="Ảnh đại diện" />
+                    <p>Họ tên: @User.FindFirstValue(ClaimTypes.Name)</p>
+                    <p>Số điên thoại: @User.FindFirstValue(ClaimTypes.MobilePhone)</p>
+                    <p>Email: @User.FindFirstValue(ClaimTypes.Email)</p>
+                    <a href="/User/ChangePassword">Đổi mật khẩu</a>
+                }
+                <!-- CONTACT -->
+                <div class="contact-part">
+                    <div class="contact-line">
+                        <span class="lnr lnr-home"></span>
+                        <span>FPT University, Hoa Lac, Thach That, Ha Noi</span>
+                    </div>
+                    <div class="contact-line">
+                        <a href="#">
+                            <span class="lnr lnr-phone-handset"></span>
+                            <span> + (84) 0969-923-159</span>
+                        </a>
+                    </div>
+                    <div class="contact-line">
+                        <a href="#">
+                            <span class="lnr lnr-envelope"></span>
+                            <span> hoangthhe161351@fpt.edu.vn</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- SOCIAL -->
+                <div class="social">
+                    <a href="#">
+                        <i class="zmdi zmdi-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="zmdi zmdi-facebook-box"></i>
+                    </a>
+                    <a href="#">
+                        <i class="zmdi zmdi-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="zmdi zmdi-instagram"></i>
+                    </a>
+                </div>
+            </div>
 
+        </header>
+    }
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+    <footer>
+        <!-- FOOTER TOP -->
+        <div class="ft-top text-center text-md-left">
+            <div class="container">
+                <div class="ft-top-wrapper pb-54">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 ft-col">
+                            <a href="index.html">
+                                <img src="~/images/logo-2.png" alt="" />
+                            </a>
+                            <p class="style">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan-tium doloremque laudantium, totam rem aperiam,</p>
+                            <!-- SOCIAL -->
+                            <div class="social">
+                                <a href="#">
+                                    <i class="zmdi zmdi-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="zmdi zmdi-facebook-box"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="zmdi zmdi-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="zmdi zmdi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 ft-col mt-51 pl-64">
+                            <h6>Address</h6>
+                            <!-- CONTACT -->
+                            <div class="contact-part">
+                                <div class="contact-line">
+                                    <span class="lnr lnr-home"></span>
+                                    <span>FPT University, Hoa Lac, Thach That, Ha Noi</span>
+                                </div>
+                                <div class="contact-line">
+                                    <a href="#">
+                                        <span class="lnr lnr-phone-handset"></span>
+                                        <span> + (84) 0969-923-159</span>
+                                    </a>
+                                </div>
+                                <div class="contact-line">
+                                    <a href="#">
+                                        <span class="lnr lnr-envelope"></span>
+                                        <span> hoangthhe161351@fpt.edu.vn</span>
+                                    </a>
+                                </div>
+                                <div class="contact-line">
+                                    <a href="#">
+                                        <span class="lnr lnr-earth"></span>
+                                        <span> www.royate.com</span>
+                                    </a>
+                                </div>
+                                <div class="contact-line">
+                                    <span class="lnr lnr-clock"></span>
+                                    <span>Mon - Sat: 7AM - 10PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 ft-col mt-51 pl-50">
+                            <h6>Latest post</h6>
+                            <div class="latest-post">
+                                <div class="post-row">
+                                    <span class="">15.07.2018</span>
+                                    <h6>
+                                        <a href="blog-single.html" class="hover-fourth-color">At vero eos et accusamus</a>
+                                    </h6>
+                                </div>
+                                <div class="post-row">
+                                    <span class="">14.07.2018</span>
+                                    <h6>
+                                        <a href="blog-single.html" class="hover-fourth-color">Ut enim ad minima veniam</a>
+                                    </h6>
+                                </div>
+                                <div class="post-row">
+                                    <span class="">13.07.2018</span>
+                                    <h6 class="mb-0">
+                                        <a href="blog-single.html" class="hover-fourth-color">Nor again is there anyone</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 ft-col mt-51 pl-30">
+                            <h6 class="mb-33">Find us</h6>
+                            <!-- MAP -->
+                            @*<div class="js-google-map" data-makericon="images/map-marker-2.png" data-makers='[["Royate", "Now that you visited our website,<br> how about checking out our office too?", 40.715681, -74.003427]]'>
+                            <div class="map__holder js-map-holder map-holder" id="map"></div>
+                            </div>*@
+                            <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4818888622644!2d105.52409857457083!3d21.01339598830744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abc60e7d3f19%3A0x2be9d7d0b5abcbf4!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBGUFQ!5e0!3m2!1svi!2s!4v1699828840771!5m2!1svi!2s" width="270" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                @*<img src="~/images/map.png" alt="FU" />*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft-bot">
+            <div class="container">
+                @@ 2023 HuuPhan. Pizza Shop
+            </div>
+        </div>
+    </footer>
+
+    <!-- CLICK TO TOP -->
+    <div class="click-to-top">
+        <span class="lnr lnr-arrow-up"></span>
+    </div>
+
+    <!-- jQUERY -->
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="~/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Slider Revolution core JavaScript files -->
+    <script src="~/vendor/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/vendor/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+
+    <!-- Slider Revolution extension scripts. ONLY NEEDED FOR LOCAL TESTING -->
+    <script src="~/vendor/revolution-slider/js/revolution.extension.actions.min.js"></script>
+    <script src="~/vendor/revolution-slider/js/revolution.extension.carousel.min.js"></script>
+    <script src="~/vendor/revolution-slider/js/revolution.extension.kenburn.min.js"></script>
+    <script src="~/vendor/revolution-slider/js/revolution.extension.layeranimation.min.js"></script>
+    <script src="~/vendor/revolution-slider/js/revolution.extension.migration.min.js"></script>
+    <script src="~/vendor/revolution-slider/js/revolution.extension.navigation.min.js"></script>
+    <script src="~/vendor/revolution-slider/js/revolution.extension.parallax.min.js"></script>
+    <script src="~/vendor/revolution-slider/js/revolution.extension.slideanims.min.js"></script>
+    <script src="~/vendor/revolution-slider/js/revolution.extension.video.min.js"></script>
+
+    <!-- MAP JS-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEmXgQ65zpsjsEAfNPP9mBAz-5zjnIZBw"></script>
+    <script src="~/js/theme-map.js"></script>
+    <!-- CAROUSEL JS -->
+    <script src="~/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!-- SWEET ALERT -->
+    <script src="~/js/sweetalert.min.js"></script>
+
+    <!-- SIDENAV MOBILE -->
+    <script src="~/vendor/hcmobilenav/hc-mobile-nav.js"></script>
+
+    <!-- JQUERY UI -->
+    <script src="~/vendor/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- DATE-PICKER -->
+    <script src="~/vendor/date-picker/datepicker.js"></script>
+    <script src="~/vendor/date-picker/datepicker.en.js"></script>
+
+    <!-- JQUERY TIMEPICKER -->
+    <script src="~/vendor/jquery-timepicker-master/jquery.timepicker.min.js"></script>
+
+    <script src="~/js/main.min.js"></script>
+    <style>
+        .sorting table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd; /* Gray border */
+        }
+
+        .sorting td {
+            padding: 8px;
+        }
+>>>>>>> HoangTH
+
+        .sorting .form-holder {
+            width: 100%;
+        }
+    </style>
 </body>
+<<<<<<< HEAD
+=======
+
+>>>>>>> HoangTH
 </html>
 @functions {
     string IsCurrentPage(string page)
@@ -388,3 +613,7 @@
         return currentPage.Equals(page, StringComparison.OrdinalIgnoreCase) ? "current" : "";
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> HoangTH

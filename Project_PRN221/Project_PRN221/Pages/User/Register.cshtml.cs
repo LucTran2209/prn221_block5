@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Project_PRN221.Models;
@@ -15,8 +15,10 @@ namespace Project_PRN221.Pages.User
         [BindProperty]
         public Models.User User { get; set; }
 
+        [BindProperty]
+        public IFormFile FileInput { get; set; }
 
-
+        private string? avatar = null;
 
         public void OnGet()
         {
@@ -28,19 +30,38 @@ namespace Project_PRN221.Pages.User
             var account = await _context.Users.SingleOrDefaultAsync(acc => acc.Email.Equals(User.Email));
             if (account == null)
             {
-                var new_user = new Models.User()
+                if (FileInput != null && FileInput.Length > 0)
                 {
-                    UserName = User.UserName,
-                    FullName = User.FullName,
-                    Email = User.Email,
-                    Password = User.Password,
-                    Phone = User.Phone,
-                    Avatar = User.Avatar,
-                    RoleId = 2,
+                    using (MemoryStream memoryStream = new MemoryStream())
+                    {
+                        await FileInput.CopyToAsync(memoryStream);
+                        byte[] bytes = memoryStream.ToArray();
+                        avatar = Convert.ToBase64String(bytes);
+                        
+                    }
+                }
+                if(avatar != null)
+                {
+                    var new_user = new Models.User()
+                    {
+                        UserName = User.UserName,
+                        FullName = User.FullName,
+                        Avatar = avatar,
+                        Email = User.Email,
+                        Password = User.Password,
+                        Phone = User.Phone,
+                        RoleId = 2,
+                    };
+                    _context.Users.Add(new_user);
+                    await _context.SaveChangesAsync();
+                }
+                else
+                {
+                    ViewData["Error"] = "Định dạng ảnh không hợp lệ";
+                    return Page();
+                }
 
-                };
-                await _context.AddAsync(new_user);
-                await _context.SaveChangesAsync();
+
                 return RedirectToPage("/user/login");
             }
             else
