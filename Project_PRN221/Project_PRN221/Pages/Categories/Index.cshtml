@@ -21,7 +21,7 @@
 <section class="pt-100 pb-20" style="padding-bottom:20px;padding-top:120px">
 <form method="post">
     <div class="form-group">
-            <label for="categoryName" style="font-family: Merriweather;font-size: 40px;">Tên loại văn bản</label>
+        <label for="categoryName" style="font-family: Merriweather;font-size: 40px;">Tên loại văn bản</label>
         <input type="text" class="form-control" id="categoryName" name="categoryName" placeholder="Nhập tên loại văn bản" required>
     </div>
     <button type="submit" class="btn btn-primary">Thêm loại văn bản mới</button>
@@ -42,13 +42,12 @@
             <tr>
                 <td>@category.CategoryId</td>
                 <form method="post" asp-page="Edit">
-                    <input type="hidden" name="id" value="@category.CategoryId">
                     <td>
-                        <input type="text" disabled value="@category.CategoryName" name="categoryName" id="categoryName-@category.CategoryId" required/>
+                        <input type="hidden" name="id" value="@category.CategoryId">
+                        <input type="text" disabled value="@category.CategoryName" name="cateName" id="categoryName-@category.CategoryId" required/>
                     </td>
                     <td>
                         <input type="submit" value="Edit" id="edit-button-@category.CategoryId" onclick="toggleInput(@category.CategoryId)"/>
-
                     </td>
                 </form>
                 <td>

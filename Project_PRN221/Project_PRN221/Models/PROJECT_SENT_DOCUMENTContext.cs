@@ -43,7 +43,7 @@ namespace Project_PRN221.Models
             {
                 entity.Property(e => e.CategoryName)
                     .HasMaxLength(50)
-                    .IsUnicode(false);
+                    .IsUnicode(true);
             });
 
             modelBuilder.Entity<Document>(entity =>

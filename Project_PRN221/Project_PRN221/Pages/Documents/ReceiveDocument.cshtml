@@ -11,19 +11,19 @@
                         Tìm kiếm văn bản
 
                     </div>
-                    <form method="get" class="woocommerce-ordering">
+                    <form method="get" enctype="multipart/form-data" class="woocommerce-ordering">
                         <table>
                             <tr>
                                 <td>
                                     <span>Văn bản số</span>
                                     <div class="widget_search">
-                                        <input class="form-control" type="text" asp-for="@Model.DoccumentNumber" id="txtSearch" placeholder="Enter document name to search">
+                                        <input class="form-control" type="text" asp-for="DoccumentNumber" placeholder="Enter document name to search">
                                     </div>
                                 </td>
                                 <td>
                                     <span>Loại văn bản</span>
                                     <div class="form-holder">
-                                        <select id="sortSelect1" asp-for="@Model.CategoryID" asp-items="ViewBag.CategoryID" class="orderby form-control" style="width:100%">
+                                        <select asp-for="CategoryID" asp-items="ViewBag.CategoryID" class="orderby form-control" style="width:100%">
                                             <option value="">All</option>
                                         </select>
                                     </div>
@@ -32,7 +32,7 @@
                                     <span>Người ký văn bản</span>
                                     <div class="form-holder">
                                         <div class="widget_search">
-                                            <input class="form-control" type="text" asp-for="@Model.HumanSign" id="txtSearch" placeholder="Enter document name to search">
+                                            <input class="form-control" type="text" asp-for="HumanSign" placeholder="Enter document name to search">
                                         </div>
                                     </div>
                                 </td>
@@ -42,7 +42,7 @@
                                     <span>Từ ngày</span>
                                     <div class="form-holder">
                                         <div class="widget_search">
-                                            <input class="form-control" type="date" asp-for="@Model.StartDate" id="txtSearch" placeholder="Enter document name to search">
+                                            <input class="form-control" type="date" asp-for="StartDate" placeholder="Enter document name to search">
                                         </div>
                                     </div>
                                 </td>
@@ -50,14 +50,14 @@
                                     <span>Đến ngày</span>
                                     <div class="form-holder">
                                         <div class="widget_search">
-                                            <input class="form-control" type="date" asp-for="@Model.EndDate" id="txtSearch" placeholder="Enter document name to search">
+                                            <input class="form-control" type="date" asp-for="EndDate" placeholder="Enter document name to search">
                                         </div>
                                     </div>
                                 </td>
                                 <td>
                                     <span>Người gửi</span>
                                     <div class="widget_search">
-                                        <input class="form-control" type="text" asp-for="@Model.Username" id="txtSearch" placeholder="Enter document name to search">
+                                        <input class="form-control" type="text" asp-for="Username" placeholder="Enter document name to search">
                                     </div>
                                 </td>
                             </tr>
@@ -65,13 +65,13 @@
                                 <td>
                                     <span>Title</span>
                                     <div class="widget_search">
-                                        <input class="form-control" type="text" asp-for="@Model.Title" id="txtSearch" placeholder="Enter document name to search">
+                                        <input class="form-control" type="text" asp-for="Title" placeholder="Enter document name to search">
                                     </div>
                                 </td>
                                 <td>
                                     <span>Trạng thái</span>
                                     <div class="form-holder">
-                                        <select id="sortSelect1" asp-for="@Model.IsRead" class="orderby form-control" style="width:100%">
+                                        <select asp-for="IsRead" class="orderby form-control" style="width:100%">
                                             <option value="">All</option>
                                             <option value="true">Đã đọc</option>
                                             <option value="false">Chưa đọc</option>
@@ -80,7 +80,7 @@
                                 </td>
                                 <td colspan="3">
                                     <div class="form-holder" style=" margin-top: 20px;width:100%">
-                                        <input type="submit" class="woocommerce-Button button au-btn round has-bg" name="login" value="Tìm kiếm">
+                                        <input type="submit" class="woocommerce-Button button au-btn round has-bg" value="Tìm kiếm">
                                     </div>
                                 </td>
                             </tr>
@@ -134,51 +134,61 @@
                   
                 </div>
                 <div class="woocommerce-pagination">
-                    @*<ul class="page-numbers">
+                    <ul class="page-numbers">
                     <li>
-                    @if (pageNum == 1)
-                    {
-                    <a href="/products/menu?PageNum=@prev" hidden="hidden" class="page-numbers prev">
+                        <a  asp-route-indexPage="@(Model.IndexPage-1)"
+                            asp-page="./ReceiveDocment" 
+                            asp-route-doccumentNumber="@Model.DoccumentNumber"   
+                            asp-route-categoryId="@Model.CategoryID"   
+                            asp-route-humanSign="@Model.HumanSign"   
+                            asp-route-startDate="@Model.StartDate"   
+                            asp-route-endDate="@Model.EndDate"   
+                            asp-route-username="@Model.Username"   
+                            asp-route-title="@Model.Title"   
+                            asp-route-isRead="@Model.IsRead"   
+                            style="display:@(Model.documents.HasPreviousPage ? "inherit" : "none")"
+                            class="page-numbers prev"
+                            >
                     <span class="lnr lnr-arrow-left"></span>
                     </a>
-                    }
-                    else
-                    {
-                    <a href="/products/menu?PageNum=@prev" class="page-numbers prev">
-                    <span class="lnr lnr-arrow-left"></span>
-                    </a>
-                    }
                     </li>
-                    @for (var i = 1; i <= total; i++)
-                    {
-                    @if (pageNum == i)
+                    @for (int i = 1; i <= Model.documents.TotalPages; i++)
                     {
                     <li>
-                    <span class="page-numbers current"><a href="/products/menu?PageNum=@i">@i</a></span>
+                        <span class="page-numbers @(Model.documents.PageIndex == i ? "current": "inactive")">
+                            <a  asp-route-indexPage="@i"
+                                asp-page="./ReceiveDocment"
+                                asp-route-doccumentNumber="@Model.DoccumentNumber"   
+                                asp-route-categoryId="@Model.CategoryID"   
+                                asp-route-humanSign="@Model.HumanSign"   
+                                asp-route-startDate="@Model.StartDate"   
+                                asp-route-endDate="@Model.EndDate"   
+                                asp-route-username="@Model.Username"   
+                                asp-route-title="@Model.Title"   
+                                asp-route-isRead="@Model.IsRead"   >
+                                    @i
+                             </a>
+                        </span>
                     </li>
-                    }
-                    else
-                    {
-                    <li>
-                    <a href="/products/menu?PageNum=@i" class="page-numbers inactive">@i</a>
-                    </li>
-                    }
+
                     }
                     <li>
-                    @if (pageNum == total)
-                    {
-                    <a href="/products/menu?PageNum=@next" hidden="hidden" class="page-numbers next">
+                    <a  asp-route-indexPage="@(Model.IndexPage + 1)"
+                        asp-page="./ReceiveDocment" 
+                        asp-route-doccumentNumber="@Model.DoccumentNumber"   
+                        asp-route-categoryId="@Model.CategoryID"   
+                        asp-route-humanSign="@Model.HumanSign"   
+                        asp-route-startDate="@Model.StartDate"   
+                        asp-route-endDate="@Model.EndDate"   
+                        asp-route-username="@Model.Username"   
+                        asp-route-title="@Model.Title"   
+                        asp-route-isRead="@Model.IsRead"   
+                        style="display:@(Model.documents.HasNextPage ? "inherit" : "none")"
+                        class="page-numbers next">
                     <span class="lnr lnr-arrow-right"></span>
                     </a>
-                    }
-                    else
-                    {
-                    <a href="/products/menu?PageNum=@next" class="page-numbers next">
-                    <span class="lnr lnr-arrow-right"></span>
-                    </a>
-                    }
                     </li>
-                    </ul>*@
+                    </ul>
                 </div>
             </div>
             
