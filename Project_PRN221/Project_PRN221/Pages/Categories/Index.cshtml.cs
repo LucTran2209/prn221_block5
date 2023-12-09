@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Project_PRN221.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Project_PRN221.Pages.Categories
 {
@@ -13,6 +14,9 @@ namespace Project_PRN221.Pages.Categories
 		}
 
 		public List<Category> Categories { get; set; } = default!;
+		[BindProperty]
+		[Required(ErrorMessage = "Không được để trống")]
+		public string categoryName { get; set; } = default!;
 
 		public IActionResult OnGet()
         {
@@ -20,9 +24,13 @@ namespace Project_PRN221.Pages.Categories
 			return Page();
         }
 
-		public async Task<IActionResult> OnPostAsync(string categoryName)
+		public async Task<IActionResult> OnPostAsync()
 		{
-			Category category = new Category { CategoryName = categoryName};
+			if(!ModelState.IsValid)
+			{
+				return Page();
+			}
+			var category = new Category { CategoryName = categoryName};
 			try
 			{
 				_context.Categories.Add(category);

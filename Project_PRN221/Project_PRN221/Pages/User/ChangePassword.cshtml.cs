@@ -24,8 +24,9 @@ namespace Project_PRN221.Pages.User
 		[BindProperty]
 		[Required(ErrorMessage = "Không để trống")]
 		public string newpassword { get; set; }
-		[Required(ErrorMessage = "Không để trống")]
 		[BindProperty]
+		[Required(ErrorMessage = "Không để trống")]
+		[Compare(nameof(newpassword), ErrorMessage = "Mật khẩu mới nhập không khớp")]
 		public string repassword { get; set; }
 
 
@@ -36,6 +37,10 @@ namespace Project_PRN221.Pages.User
 		}
 		public async Task<IActionResult> OnPostAsync()
 		{
+			if (!ModelState.IsValid)
+			{
+				return Page();
+			}
 			string email = User.FindFirstValue(ClaimTypes.Email);
 			var account = await _context.Users.SingleOrDefaultAsync(acc => acc.Email.Equals(email));
 			if (account != null)

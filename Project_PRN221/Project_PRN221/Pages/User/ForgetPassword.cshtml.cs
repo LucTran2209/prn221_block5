@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Project_PRN221.Models;
 using System.Text;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Project_PRN221.Pages.User
 {
@@ -16,8 +17,11 @@ namespace Project_PRN221.Pages.User
 		}
 
 		[BindProperty]
+		[Required(ErrorMessage = "Không được để trống")]
+		[EmailAddress(ErrorMessage = "Email không hợp lệ")]
 		public string email { get; set; }
 		[BindProperty]
+		[Required(ErrorMessage = "Không được để trống")]
 		public string username { get; set; }
 
 		public void OnGet()
@@ -26,7 +30,10 @@ namespace Project_PRN221.Pages.User
 		}
 		public async Task<IActionResult> OnPostAsync()
 		{
-
+			if(!ModelState.IsValid)
+			{
+				return Page();
+			}
 			var account = await _context.Users.SingleOrDefaultAsync(acc => acc.Email.Equals(email));
 			if (account != null)
 			{

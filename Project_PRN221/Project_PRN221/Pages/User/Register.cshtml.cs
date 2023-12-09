@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Project_PRN221.Models;
 
@@ -16,16 +17,30 @@ namespace Project_PRN221.Pages.User
         public Models.User User { get; set; }
 
         [BindProperty]
-        public IFormFile FileInput { get; set; }
+        public IFormFile? FileInput { get; set; }
 
         private string? avatar = null;
 
-        public void OnGet()
-        {
 
+        public void OnGetAsync()
+        {
+            LoadForm();
         }
+
+        private void LoadForm()
+        {
+            ViewData["AgenceId"] = new SelectList(_context.Agences, "AgenceId", "AgenceName");
+        }
+
         public async Task<IActionResult> OnPostAsync()
         {
+            LoadForm();
+            if (!ModelState.IsValid)
+            {
+
+                return Page();
+
+            }
 
             var account = await _context.Users.SingleOrDefaultAsync(acc => acc.Email.Equals(User.Email));
             if (account == null)
@@ -40,28 +55,13 @@ namespace Project_PRN221.Pages.User
                         
                     }
                 }
-                if(avatar != null)
+                if(!String.IsNullOrEmpty(avatar))
                 {
-                    var new_user = new Models.User()
-                    {
-                        UserName = User.UserName,
-                        FullName = User.FullName,
-                        Avatar = avatar,
-                        Email = User.Email,
-                        Password = User.Password,
-                        Phone = User.Phone,
-                        RoleId = 2,
-                    };
-                    _context.Users.Add(new_user);
-                    await _context.SaveChangesAsync();
+                    User.Avatar = avatar;
+                    
                 }
-                else
-                {
-                    ViewData["Error"] = "Định dạng ảnh không hợp lệ";
-                    return Page();
-                }
-
-
+                _context.Users.Add(User);
+                await _context.SaveChangesAsync();
                 return RedirectToPage("/user/login");
             }
             else

@@ -84,7 +84,7 @@ namespace Project_PRN221.Models
             {
                 entity.HasKey(e => e.SendId);
 
-                entity.ToTable("SendDocument");
+                entity.ToTable("SendDocuments");
 
                 entity.Property(e => e.SendId).ValueGeneratedNever();
 

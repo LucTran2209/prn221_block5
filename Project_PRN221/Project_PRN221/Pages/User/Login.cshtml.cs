@@ -11,6 +11,7 @@ using System.Text.Json;
 using Project_PRN221.Models;
 using Microsoft.EntityFrameworkCore;
 using NuGet.Protocol.Plugins;
+using System.ComponentModel.DataAnnotations;
 
 namespace Project_PRN221.Pages.User
 {
@@ -25,32 +26,45 @@ namespace Project_PRN221.Pages.User
 			_hostingEnvironment = hostingEnvironment;
 		}
 		[BindProperty]
-		public Models.User Account { get; set; }
+        [Required(ErrorMessage = "Không được để trống")]
+		[EmailAddress(ErrorMessage = "Email không hợp lệ")]
+        public string Email { get; set; }
+		[BindProperty]
+		[Required(ErrorMessage = "Không được để trống")]
+		public string Password { get; set; }
+
 		public void OnGet()
 		{
 		}
 		public async Task<IActionResult> OnPostAsync()
 		{
-			var account = await _context.Users.Include(acc => acc.Role).SingleOrDefaultAsync(acc => acc.Email.Equals(Account.Email));
+			if(!ModelState.IsValid)
+			{
+				return Page();
+			}
+			var account = await _context.Users.Include(acc => acc.Role).SingleOrDefaultAsync(acc => acc.Email.Equals(Email));
 			if (account != null)
 			{
-				if (account.Password == Account.Password)
+				if (account.Password == Password)
 				{
 					string email = account.Email;
                     string fullName = account.FullName;
                     string role = account.Role.RoleName;
 					string phone = account.Phone;
 					string avatar = account.Avatar;
+					string path;
 					try
 					{
                         byte[] imageBytes = Convert.FromBase64String(avatar);
                         string imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", "avatar.png");
                         System.IO.File.WriteAllBytes(imagePath, imageBytes);
-                    }catch(Exception ex)
-					{
-
+						path = "/images/avatar.png";
 					}
-                    HttpContext.Session.SetString("AvatarPath", $"/images/avatar.png");
+					catch(Exception ex)
+					{
+						path = "/images/default.png";
+					}
+                    HttpContext.Session.SetString("AvatarPath", path);
                     var accountClaims = new List<Claim>()
                     {
                         new Claim("AccountId", account.UserId.ToString()),

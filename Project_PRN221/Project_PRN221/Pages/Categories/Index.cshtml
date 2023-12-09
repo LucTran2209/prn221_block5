@@ -22,7 +22,8 @@
 <form method="post">
     <div class="form-group">
         <label for="categoryName" style="font-family: Merriweather;font-size: 40px;">Tên loại văn bản</label>
-        <input type="text" class="form-control" id="categoryName" name="categoryName" placeholder="Nhập tên loại văn bản" required>
+        <input type="text" class="form-control" id="categoryName" asp-for="categoryName" placeholder="Nhập tên loại văn bản" required>
+        <span class="msg-error" asp-validation-for="categoryName"></span>
     </div>
     <button type="submit" class="btn btn-primary">Thêm loại văn bản mới</button>
 </form>
