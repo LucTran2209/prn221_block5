@@ -25,7 +25,6 @@
 
   <ItemGroup>
     <Folder Include="Hubs\" />
-    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>
