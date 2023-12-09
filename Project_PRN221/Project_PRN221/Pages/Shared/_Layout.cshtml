@@ -177,10 +177,11 @@
                 </div>
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <img src="@Context.Session.GetString("AvatarPath")" alt="Ảnh đại diện" />
+                    <img src="@User.FindFirstValue("Avatar")" alt="Ảnh đại diện" />
                     <p>Họ tên: @User.FindFirstValue(ClaimTypes.Name)</p>
                     <p>Số điên thoại: @User.FindFirstValue(ClaimTypes.MobilePhone)</p>
                     <p>Email: @User.FindFirstValue(ClaimTypes.Email)</p>
+                    <a href="/User/ChangeProfile">Chỉnh sửa thông tin</a>
                     <a href="/User/ChangePassword">Đổi mật khẩu</a>
                 }
                 <!-- CONTACT -->

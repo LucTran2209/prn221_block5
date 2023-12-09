@@ -1,0 +1,45 @@
+﻿@page
+@model Project_PRN221.Pages.User.ChangeProfileModel
+@{
+}
+
+<!-- SIGN UP -->
+<section class="section-primary sign-up pt-112 pb-90">
+    <div class="container">
+        <h4>Thay đổi thông tin</h4>
+        <form method="post" enctype="multipart/form-data">
+
+            <div class="form-holder">
+                <label>Họ tên</label>
+                <input type="text" asp-for="Fullname"class="form-control" />
+                <span class="msg-error" asp-validation-for="Fullname"></span>
+            </div>
+            <div class="form-holder">
+                <label>Số điện thoại</label>
+                <input type="text" asp-for="Phone" class="form-control" />
+                <span class="msg-error" asp-validation-for="Phone"></span>
+            </div>
+            <div class="form-holder">
+                <select asp-for="AgenceId" asp-items="ViewBag.AgenceId" class="orderby form-control" style="width:100%">
+                    <option value="" selected>Select Agence</option>
+                </select>
+                <span class="msg-error" asp-validation-for="AgenceId"></span>
+            </div>
+            <div>
+                <label>Avatar<span class="required">*</span></label>
+                <input asp-for="ImageAvatar" type="file" />
+                <span class="msg-error" asp-validation-for="ImageAvatar"></span>
+            </div>
+            <input class="au-btn round has-bg" type="submit" name="submit" value="Xác nhận" />
+            <a href="/index" class="return-link">Trở về trang chủ</a>
+        </form>
+        @if (ViewBag.Message != null)
+        {
+            <p>@ViewBag.Message</p>
+        }
+        @if (ViewBag.Error != null)
+        {
+            <p>@ViewBag.Error</p>
+        }
+    </div>
+</section>

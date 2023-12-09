@@ -1,16 +1,9 @@
-﻿using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Text;
-using Microsoft.AspNetCore.Authorization;
-using System.Text.Json;
 using Project_PRN221.Models;
 using Microsoft.EntityFrameworkCore;
-using NuGet.Protocol.Plugins;
 using System.ComponentModel.DataAnnotations;
 
 namespace Project_PRN221.Pages.User
@@ -57,6 +50,11 @@ namespace Project_PRN221.Pages.User
 					{
                         byte[] imageBytes = Convert.FromBase64String(avatar);
                         string imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", "avatar.png");
+                        if (System.IO.File.Exists(imagePath))
+                        {
+                            // Nếu tệp tồn tại, xóa nó
+                            System.IO.File.Delete(imagePath);
+                        }
                         System.IO.File.WriteAllBytes(imagePath, imageBytes);
 						path = "/images/avatar.png";
 					}
@@ -64,10 +62,10 @@ namespace Project_PRN221.Pages.User
 					{
 						path = "/images/default.png";
 					}
-                    HttpContext.Session.SetString("AvatarPath", path);
                     var accountClaims = new List<Claim>()
                     {
                         new Claim("AccountId", account.UserId.ToString()),
+                        new Claim("Avatar", path),
                         new Claim(ClaimTypes.Email,email),
                         new Claim(ClaimTypes.Name, fullName),
                         new Claim(ClaimTypes.Role, role),
