@@ -14,7 +14,5 @@ namespace Project_PRN221.Models
         public bool IsRead { get; set; }
 
         public virtual Document Document { get; set; } = null!;
-        public virtual User UserIdReceiveNavigation { get; set; } = null!;
-        public virtual User UserIdSendNavigation { get; set; } = null!;
     }
 }

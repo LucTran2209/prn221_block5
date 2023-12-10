@@ -25,40 +25,36 @@ namespace Project_PRN221.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-			if (!optionsBuilder.IsConfigured)
-			{
-				var ConnectionString = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetConnectionString("DefaultConnection");
-				optionsBuilder.UseSqlServer(ConnectionString);
-			}
-		}
+            if (!optionsBuilder.IsConfigured)
+            {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("server =(local); database =PROJECT_SENT_DOCUMENT ;uid=sa;pwd=123456;Trusted_Connection=True;Encrypt=False");
+            }
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Agence>(entity =>
             {
-                entity.Property(e => e.AgenceName).HasMaxLength(100);
+                entity.Property(e => e.AgenceName).HasMaxLength(50);
             });
 
             modelBuilder.Entity<Category>(entity =>
             {
-                entity.Property(e => e.CategoryName)
-                    .HasMaxLength(50)
-                    .IsUnicode(true);
+                entity.Property(e => e.CategoryName).HasMaxLength(150);
             });
 
             modelBuilder.Entity<Document>(entity =>
             {
-                entity.Property(e => e.Content).IsUnicode(false);
+                entity.Property(e => e.Content).HasColumnType("text");
 
                 entity.Property(e => e.CreateDate).HasColumnType("date");
 
-                entity.Property(e => e.DocumentNumber)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                entity.Property(e => e.DocumentNumber).HasMaxLength(100);
 
-                entity.Property(e => e.HumanSign).HasMaxLength(100);
+                entity.Property(e => e.HumanSign).HasMaxLength(150);
 
-                entity.Property(e => e.Title).HasMaxLength(50);
+                entity.Property(e => e.Title).HasMaxLength(150);
 
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Documents)
@@ -75,20 +71,14 @@ namespace Project_PRN221.Models
 
             modelBuilder.Entity<Role>(entity =>
             {
-                entity.Property(e => e.RoleName)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
+                entity.Property(e => e.RoleName).HasMaxLength(50);
             });
 
             modelBuilder.Entity<SendDocument>(entity =>
             {
                 entity.HasKey(e => e.SendId);
 
-                entity.ToTable("SendDocument");
-
-                entity.Property(e => e.SendId).ValueGeneratedNever();
-
-                entity.Property(e => e.Message).HasMaxLength(50);
+                entity.Property(e => e.Message).HasMaxLength(100);
 
                 entity.Property(e => e.SentDate).HasColumnType("date");
 
@@ -100,30 +90,18 @@ namespace Project_PRN221.Models
                     .WithMany(p => p.SendDocuments)
                     .HasForeignKey(d => d.DocumentId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_SendDocument_Documents");
-
-                entity.HasOne(d => d.UserIdReceiveNavigation)
-                    .WithMany(p => p.SendDocumentUserIdReceiveNavigations)
-                    .HasForeignKey(d => d.UserIdReceive)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_SendDocument_Users1");
-
-                entity.HasOne(d => d.UserIdSendNavigation)
-                    .WithMany(p => p.SendDocumentUserIdSendNavigations)
-                    .HasForeignKey(d => d.UserIdSend)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_SendDocument_Users");
+                    .HasConstraintName("FK_SendDocuments_Documents");
             });
 
             modelBuilder.Entity<User>(entity =>
             {
-                entity.Property(e => e.Avatar).IsUnicode(false);
+                entity.Property(e => e.Avatar).HasColumnType("text");
 
                 entity.Property(e => e.Email)
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
-                entity.Property(e => e.FullName).HasMaxLength(50);
+                entity.Property(e => e.FullName).HasMaxLength(150);
 
                 entity.Property(e => e.Password)
                     .HasMaxLength(50)
@@ -134,12 +112,13 @@ namespace Project_PRN221.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.UserName)
-                    .HasMaxLength(50)
+                    .HasMaxLength(150)
                     .IsUnicode(false);
 
                 entity.HasOne(d => d.Agence)
                     .WithMany(p => p.Users)
                     .HasForeignKey(d => d.AgenceId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Users_Agences");
 
                 entity.HasOne(d => d.Role)

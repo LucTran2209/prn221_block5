@@ -2,3 +2,112 @@
 @model Project_PRN221.Pages.Documents.SendDetailModel
 @{
 }
+<section class="section-primary pt-150 pb-113 shop-list" style="padding-left:50px;padding-right:50px;">
+<div class="Detail">
+    <div class="Title">
+        <h4 class="title">
+            <span id="ctrl_190596_91_lb_noidung">Văn bản số @Model.Document.DocumentNumber :  @Model.Document.Description</span>
+        </h4>
+    </div>
+    <div class="document-detail" id="block_detail" style="display: none;">
+        <div style="all: initial">
+            <br>
+        </div>
+
+    </div>
+    <div id="ctrl_190596_91_Content" class="Content sorting">
+        <table style="width: 100%">
+            <tbody>
+                <tr>
+                    <td class="col1" style="width: 135px">Số ký hiệu</td>
+                    <td>
+                        @Model.Document.DocumentNumber
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">Ngày tạo</td>
+                    <td>
+                        @Model.Document.CreateDate
+                    </td>
+                </tr>
+                <tr id="ctrl_190596_91_tr_ngaycohieuluc">
+                    <td class="col1">Ngày Gửi</td>
+                    <td>
+                        @Model.SendDocument.SentDate
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col1">Loại văn bản</td>
+                    <td>
+                        @Model.Document.Category.CategoryName
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">Người nhận</td>
+                    <td>
+                      ////
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">Người ký</td>
+                    <td>
+                        @Model.Document.HumanSign
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">Trích yếu</td>
+                    <td>
+                        @Model.Document.Description
+                    </td>
+                </tr>
+                <tr class="doc-list">
+                    <td class="col1">Tài liệu đính kèm</td>
+                    <td>
+                        <div class="rp-file" style="display: flex">
+                            <a href="#" title="Tải về" style="color: #005594" target="_blank" class="view-file">
+                                Tài liệu đính kèm
+                            </a>
+                            <a style=""><i class="fa fa-eye" aria-hidden="true" id="toggleButton"></i></a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="detail-file" id="imageDiv" style="display: none;">
+            <img src="data:image/png;base64, @Model.Document.Content" alt="Mô tả hình ảnh">
+        </div>
+    </div>
+</div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#toggleButton").click(function () {
+            $("#imageDiv").toggle();
+        });
+    });
+</script>
+<style>
+    .col1 {
+    background: #F9F9F9;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #62748D;
+    vertical-align: middle;
+    }
+    .Detail .Content table tr td:last-child {
+    font-family: Roboto;
+        border: 1px solid #E9E9E9;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    color: #182940 !important;
+    }
+</style>
