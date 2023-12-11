@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol.Plugins;
 using Project_PRN221.Dto;
 using Project_PRN221.Models;
 using System.Security.Claims;
@@ -25,7 +26,9 @@ namespace Project_PRN221.Pages.Documents
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; } = DateTime.Now;
 
-        public async Task<IActionResult> OnGetAsync(string? doccumentNumber, int? categoryId, string? humanSign, DateTime? startDate, DateTime? endDate, string? username, string? title)
+        public async Task<IActionResult> OnGetAsync(string? doccumentNumber, int? categoryId, 
+                                                    string? humanSign, DateTime? startDate, DateTime? endDate, 
+                                                    string? username, string? title)
         {
             LoadForm();
             int userId = Int32.Parse(@User.FindFirstValue("AccountId"));
@@ -40,16 +43,23 @@ namespace Project_PRN221.Pages.Documents
             if (endDate != null) { query = query.Where(d => d.SentDate <= endDate); }
 
             if (title != null) { query = query.Where(d => d.Document.Title.ToLower().Contains(title.ToLower())); }
-            var list = from document in query
-                       select new SendDocumentDto
-                       {
-                           DocumentNumber = document.Document.DocumentNumber,
-                           CreateDate = document.Document.CreateDate.ToString("dd/MM/yyyy"),
-                           Description = document.Document.Description,
-                           SendDate = document.SentDate.ToString("dd/MM/yyyy"),
-                           AgenceReceive = _context.Agences.FirstOrDefault(h => h.AgenceId == (_context.Users.FirstOrDefault(u => u.UserId == document.UserIdReceive)).AgenceId).AgenceName,
-                       };
-            ViewData["ListDocumentSent"] = list.ToList();
+            var documentSendDetail = from Document in _context.Documents
+                                     join sendDocument in _context.SendDocuments on Document.DocumentId equals sendDocument.DocumentId                                 
+                                     select new SendDocumentDetailDto
+                                     {
+                                         DocumentNumber = Document.DocumentNumber,
+                                         DocumentTitle = Document.Title,
+                                         DocumentDescription = Document.Description,
+                                         DocumentType = _context.Categories.SingleOrDefault(x => x.CategoryId == Document.CategoryId).CategoryName,
+                                         DocumentUrl = Document.Content,
+                                         UserReceive = _context.Users.SingleOrDefault(x => x.UserId == sendDocument.UserIdReceive).FullName,
+                                         UserSend = _context.Users.SingleOrDefault(x => x.UserId == sendDocument.UserIdSend).FullName,
+                                         AgenceReceive = _context.Users.Include(x => x.Agence).SingleOrDefault(x => x.UserId == sendDocument.UserIdReceive).Agence.AgenceName,
+                                         SentDate = sendDocument.SentDate,
+                                         IssueDate = Document.CreateDate,
+                                         HumanSign = Document.HumanSign,
+                                     };
+           // ViewData["ListDocumentSent"] = list.ToList();
             return Page();
         }
 
