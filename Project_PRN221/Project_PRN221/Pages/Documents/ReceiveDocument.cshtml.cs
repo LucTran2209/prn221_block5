@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Project_PRN221.Data;
 using Project_PRN221.Models;
 using System.Security.Claims;
 
@@ -35,8 +34,8 @@ namespace Project_PRN221.Pages.Documents
         public bool? IsRead { get; set; } = null;
         [BindProperty]
         public int IndexPage { get; set; } = 1;
-
-        public PaginatedList<SendDocument> documents {  get; set; }
+        public List<SendDocument> documents { get; set; }
+         //public PaginatedList<SendDocument> documents {  get; set; }
 
         public async Task<IActionResult> OnGetAsync(string? doccumentNumber, int? categoryId, string? humanSign, DateTime? startDate, DateTime? endDate, string? username, string? title, bool? isRead, int? pageIndex)
         {
@@ -54,8 +53,9 @@ namespace Project_PRN221.Pages.Documents
             if (username != null) { query = query.Where(d => d.UserIdSendNavigation.FullName.ToLower().Contains(username.ToLower())); Username = username; }
             if (title != null) { query = query.Where(d => d.Document.Title.ToLower().Contains(title.ToLower())); Title = title; }
             if (isRead != null) { query = query.Where(d => d.IsRead == isRead); IsRead = isRead; }
-            documents = await PaginatedList<SendDocument>.CreateAsync(query.AsNoTracking(), pageIndex??1, 4);
-            IndexPage = documents.PageIndex;
+            //documents = await PaginatedList<SendDocument>.CreateAsync(query.AsNoTracking(), pageIndex??1, 4);
+            documents = query.ToList();
+            //IndexPage = documents.ToList();
             return Page();
         }
 

@@ -2,3 +2,127 @@
 @model Project_PRN221.Pages.Documents.SendDetailModel
 @{
 }
+<section class="section-primary pt-150 pb-113 shop-list" style="padding-left:50px;padding-right:50px;">
+    <div class="Detail">
+        <div class="Title">
+            <h4 class="title">
+                <span id="ctrl_190596_91_lb_noidung" style="font-family: 'Times New Roman', Times, serif">Văn bản số @Model.SendDocumentDetailDtoSend.DocumentNumber của Văn Phòng Đã Gửi </span>
+            </h4>
+        </div>
+        <div class="document-detail" id="block_detail" style="display: none;">
+            <div style="all: initial">
+                <br>
+            </div>
+
+        </div>
+        <div id="ctrl_190596_91_Content" class="Content sorting">
+            <table style="width: 100%">
+                <tbody>
+                    <tr>
+                        <td class="col1" style="width: 135px">Số ký hiệu</td>
+                        <td>
+                            @Model.SendDocumentDetailDtoSend.DocumentNumber
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Ngày Có hiệu lực</td>
+                        <td>
+                            @Model.SendDocumentDetailDtoSend.IssueDate.ToString("dd/MM/yyyy")
+                        </td>
+                    </tr>
+                    <tr id="ctrl_190596_91_tr_ngaycohieuluc">
+                        <td class="col1">Ngày Gửi</td>
+                        <td>
+                            @Model.SendDocumentDetailDtoSend.SentDate.ToString("dd/MM/yyyy")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Tiêu đề</td>
+                        <td>
+                            @Model.SendDocumentDetailDtoSend.DocumentTitle
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Loại văn bản</td>
+                        <td>
+                            @Model.SendDocumentDetailDtoSend.DocumentType
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Cơ quan nhận</td>
+                        <td>
+                            @Model.SendDocumentDetailDtoSend.AgenceReceive
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Người nhận</td>
+                        <td>
+                            @Model.SendDocumentDetailDtoSend.UserReceive
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Người ký</td>
+                        <td>
+                            @Model.SendDocumentDetailDtoSend.HumanSign
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Trích yếu</td>
+                        <td>
+                            @Model.SendDocumentDetailDtoSend.DocumentDescription
+                        </td>
+                    </tr>
+                    <tr class="doc-list">
+                        <td class="col1">Nội dung</td>
+                        <td>
+                            <div class="rp-file" style="display: flex">
+                                <a href="#" title="Tải về" style="color: #005594" target="_blank" class="view-file">
+                                    Tài liệu đính kèm 123
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <img src="data:image/png;base64, @Model.SendDocumentDetailDtoSend.DocumentUrl" alt="Mô tả hình ảnh">
+            </div>
+
+            <div class="detail-file" id="imageDiv" style="display: none;">
+                <img src="data:image/png;base64, @*@Model.Document.Content*@" alt="Mô tả hình ảnh">
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#toggleButton").click(function () {
+            $("#imageDiv").toggle();
+        });
+    });
+</script>
+<style>
+    .col1 {
+        background: #F9F9F9;
+        border: 1px solid #E9E9E9;
+        box-sizing: border-box;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #62748D;
+        vertical-align: middle;
+    }
+
+    .Detail .Content table tr td:last-child {
+        font-family: Roboto;
+        border: 1px solid #E9E9E9;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 21px;
+        color: #182940 !important;
+    }
+</style>

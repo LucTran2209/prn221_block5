@@ -30,15 +30,15 @@ namespace Project_PRN221.Pages.Documents
             LoadForm();
             int userId = Int32.Parse(@User.FindFirstValue("AccountId"));
             var query = _context.SendDocuments
-                .Include(d => d.Document).Include(d=>d.UserIdReceiveNavigation)
+                .Include(d => d.Document)
                 .Where(d => d.UserIdSend == userId)
                 .OrderBy(d => d.IsRead).ThenBy(d => d.SentDate).AsQueryable();
             if (doccumentNumber != null) { query = query.Where(d => d.Document.DocumentNumber.ToLower().Contains(doccumentNumber.ToLower())); }
             if (categoryId != null) { query = query.Where(d => d.Document.CategoryId == categoryId); }
             if (humanSign != null) { query = query.Where(d => d.Document.HumanSign.ToLower().Contains(humanSign.ToLower())); }
-            if (startDate != null) {query = query.Where(d => d.SentDate >= startDate); }
-            if (endDate != null) {query = query.Where(d => d.SentDate <= endDate); }
-            if (username != null) { query = query.Where(d => d.UserIdReceiveNavigation.FullName.ToLower().Contains(username.ToLower())); }
+            if (startDate != null) { query = query.Where(d => d.SentDate >= startDate); }
+            if (endDate != null) { query = query.Where(d => d.SentDate <= endDate); }
+
             if (title != null) { query = query.Where(d => d.Document.Title.ToLower().Contains(title.ToLower())); }
             var list = from document in query
                        select new SendDocumentDto
