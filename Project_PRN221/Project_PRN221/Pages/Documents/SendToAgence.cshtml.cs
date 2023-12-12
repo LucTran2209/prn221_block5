@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using Project_PRN221.Hubs;
 using Project_PRN221.Models;
 
 namespace Project_PRN221.Pages.Documents
@@ -15,9 +17,12 @@ namespace Project_PRN221.Pages.Documents
     {
         private readonly Project_PRN221.Models.PROJECT_SENT_DOCUMENTContext _context;
 
-        public SendToAgenceModel(Project_PRN221.Models.PROJECT_SENT_DOCUMENTContext context)
+        private readonly IHubContext<SignalrServer> _signalrServer;
+
+        public SendToAgenceModel(Project_PRN221.Models.PROJECT_SENT_DOCUMENTContext context, IHubContext<SignalrServer> signalrServer)
         {
             _context = context;
+            _signalrServer = signalrServer;
         }
 
         public async Task<IActionResult> OnGetAsync()
@@ -38,7 +43,7 @@ namespace Project_PRN221.Pages.Documents
         public string? DocumentNumber { get; set; }
 
         [BindProperty]
-        public string? Message { get; set; }
+        public string? Message { get; set;}
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
@@ -60,6 +65,7 @@ namespace Project_PRN221.Pages.Documents
 
                     _context.SendDocuments.Add(send);
                     await _context.SaveChangesAsync();
+                    await _signalrServer.Clients.All.SendAsync("LoadReceiveDocument");
                 }
             }
 

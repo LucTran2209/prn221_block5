@@ -16,20 +16,20 @@
 
                 <div class="form-group">
                     <label class="control-label">Số Ký Hiệu</label>
-                    <input class="woocommerce-Input woocommerce-Input--text input-text form-control" name="documentNumber" class="form-control" />
+                    <input class="woocommerce-Input woocommerce-Input--text input-text form-control" name="documentNumber" />
                     <span asp-validation-for="SendDocument.Message" class="text-danger"></span>
                 </div>
 
                 <div class="form-group">
                     <label class="control-label">Chọn cơ quan</label>
 
-                    <select class="woocommerce-Input woocommerce-Input--text input-text form-control" class="form-control" asp-for="AgenceId" asp-items="@((SelectList)ViewData["AgenceId"])"></select>
+                    <select class="woocommerce-Input woocommerce-Input--text input-text form-control" asp-for="AgenceId" asp-items="@((SelectList)ViewData["AgenceId"])"></select>
 
                 </div>
 
                 <div class="form-group">
                     <label asp-for="SendDocument.Message" class="control-label"></label>
-                    <input class="woocommerce-Input woocommerce-Input--text input-text form-control" asp-for="Message" class="form-control" />
+                    <input class="woocommerce-Input woocommerce-Input--text input-text form-control" asp-for="Message" />
                     <span asp-validation-for="SendDocument.Message" class="text-danger"></span>
                 </div>
 
@@ -46,3 +46,4 @@
     </div>
 
 </section>
+

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Project_PRN221.CustomHandler;
+using Project_PRN221.Hubs;
 using Project_PRN221.Models;
 using System.Security.Claims;
 
@@ -75,7 +76,7 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-//app.MapHub<ProductServer>("/hubs");
+app.MapHub<SignalrServer>("/SignalrServer");
 
 app.Run();
 
