@@ -49,14 +49,14 @@ namespace Project_PRN221.Pages.User
 					try
 					{
                         byte[] imageBytes = Convert.FromBase64String(avatar);
-                        string imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", "avatar.png");
+                        string imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", $"avatar{account.UserId}.png");
                         if (System.IO.File.Exists(imagePath))
                         {
                             // Nếu tệp tồn tại, xóa nó
                             System.IO.File.Delete(imagePath);
                         }
                         System.IO.File.WriteAllBytes(imagePath, imageBytes);
-						path = "/images/avatar.png";
+						path = $"/images/avatar{account.UserId}.png";
 					}
 					catch(Exception ex)
 					{

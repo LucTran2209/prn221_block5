@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Project_PRN221.Models;
 
@@ -14,10 +15,13 @@ namespace Project_PRN221.Pages.Documents
     public class SendToAgenceModel : PageModel
     {
         private readonly Project_PRN221.Models.PROJECT_SENT_DOCUMENTContext _context;
+        private readonly IHubContext<SignalRHub> _signalRHub;
 
-        public SendToAgenceModel(Project_PRN221.Models.PROJECT_SENT_DOCUMENTContext context)
+
+        public SendToAgenceModel(Project_PRN221.Models.PROJECT_SENT_DOCUMENTContext context, IHubContext<SignalRHub> signalRHub)
         {
             _context = context;
+            _signalRHub = signalRHub;
         }
 
         public async Task<IActionResult> OnGetAsync()
@@ -60,6 +64,7 @@ namespace Project_PRN221.Pages.Documents
 
                     _context.SendDocuments.Add(send);
                     await _context.SaveChangesAsync();
+                    await _signalRHub.Clients.All.SendAsync("LoadReceiveDocs", send.UserIdReceive, send.UserIdSend);
                 }
             }
 

@@ -2,6 +2,7 @@
 @model Project_PRN221.Pages.Documents.ReceiveDocumentModel
 @{
 }
+@using System.Security.Claims;
 <section class="section-primary pt-150 pb-113 shop-list">
     <div class="container">
         <div class="row">
@@ -90,7 +91,6 @@
                 
                 <div class="row products">
                     <table class="table search-result" cellspacing="0" rules="all" border="1" id="ctrl_191017_163_grvDocument" style="border-style:None;width:100%;border-collapse:collapse;">
-                        <tbody>
                             <tr>
                                 <th class="CodeClass" scope="col">Số ký hiệu</th>
                                 <th scope="col">Ngày ban hành</th>
@@ -98,7 +98,8 @@
                                 <th scope="col">Người gửi</th>
                                 <th scope="col">Ngày nhận</th>
                                 <th scope="col">Trạng thái</th>
-                            </tr>
+                            </tr >
+                        <tbody id="table">
                             @foreach (var item in Model.documents)
                             {
                                 <tr>
@@ -129,7 +130,7 @@
                                     </td>
                                 </tr>
                             }
-                            
+                        </tbody>
                     </table>
                   
                 </div>
@@ -195,14 +196,92 @@
         </div>
     </div>
 </section>
-<script>
-    document.getElementById("sortSelect").addEventListener("change", function () {
-        var selectedSort = this.value;
-
-        var currentUrl = window.location.href;
-        var url = new URL(currentUrl);
-        url.searchParams.set("sort", selectedSort);
-
-        window.location.href = url;
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script type="text/javascript">
+    var connection = new signalR.HubConnectionBuilder().withUrl("/signalrServer").build();
+    connection.start()
+        .then(function () {
+            console.log('SignalR đã kết nối thành công');
+        })
+        .catch(function (err) {
+            console.error('SignalR đã kết nối thất bại');
+        });
+    connection.onclose(function (error) {
+        console.log('SignalR kết nối đã đóng với lỗi: ' + error);
     });
+
+    connection.on("LoadReceiveDocs", function (userIdReceive, userIdSend) {
+        console.log('Sự kiện "LoadReceiveDocs" đã được gọi');
+        var userId = @User.FindFirstValue("AccountId");
+        if (userId === userIdReceive) {
+            LoadReceive();
+        }
+    });
+
+    function LoadReceive() {
+        console.log(`Hàm "LoadReceive" đã được gọi`);
+        var rc = ``;
+            // Tạo một đối tượng chứa các thông số bạn muốn truyền vào
+    // Gọi hàm POST bằng AJAX
+        $.ajax({
+            type: 'POST',
+            url: '/Documents/ReceiveDocument?handler=Async',
+            data: JSON.stringify({
+                "doccumentNumber": '@Model.DoccumentNumber' || null,
+                "categoryId": '@Model.CategoryID' ? Number('@Model.CategoryID') : null,
+                "humanSign": '@Model.HumanSign' || null,
+                "startDate": '@Model.StartDate' ? new Date('@Model.StartDate') : null,
+                "endDate": '@Model.EndDate' ? new Date('@Model.EndDate') : null,
+                "username": '@Model.Username' || null,
+                "title": '@Model.Title' || null,
+                "isRead": '@Model.IsRead' ? '@Model.IsRead'.toLowerCase() === 'true' : null,
+                "pageIndex": '@Model.IndexPage' ? Number('@Model.IndexPage') : null
+            }),
+            contentType: 'application/json',
+            headers: {
+                "RequestVerificationToken": $('input[name="__RequestVerificationToken"]').val()
+            },
+            success: function (data) {
+                // Xử lý dữ liệu trả về ở đây
+                $.each(data, (k, v) => {
+                    rc += `<tr>
+                            <td>
+                                <a href="./ReceiveDetail?id=${v.DocumentId}">
+                                    <span class="code">${v.Document.DocumentNumber}</span>
+                                </a>
+                            </td>
+                            <td>
+                                <span class="issued-date">${v.Document.CreateDate}</span>
+                            </td>
+                            <td>
+                                <a href="/?pageid=27160&amp;docid=209071">
+                                    <span class="substract">${v.Document.Title}</span>
+                                </a>
+                                <div class="bl-issue-date">
+                                    <span class="issued-date issued-date-inside">${v.Document.CreateDate}</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="issued-date">${v.UserIdSendNavigation.FullName}</span>
+                            </td>
+                            <td>
+                                <span class="issued-date">${v.SentDate}</span>
+                            </td>
+                            <td>
+                                <input type="checkbox" checked="${v.IsRead}" disabled>
+                            </td>
+                        </tr>`;
+                })
+                // Xử lý dữ liệu trả về ở đây
+                console.log(response);
+                $("#table").html(rc);
+                console.log("Đồng bộ văn bản nhận thành công");
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                // Xử lý lỗi ở đây
+                alert(jqXHR.status);
+                alert(errorThrown);
+            }
+        });
+    }
 </script>
