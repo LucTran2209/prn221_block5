@@ -27,5 +27,14 @@ namespace Project_PRN221.Pages
 			
            ListDocument = await _context.Documents.Include(c => c.Category).Include(u=> u.User).Where(x=> x.User.AgenceId == user.AgenceId).ToListAsync();			
 		}
+		public async Task<IActionResult> OnPostAsync()
+		{
+			int userId = Int32.Parse(@User.FindFirstValue("AccountId"));
+
+			var user = _context.Users.FirstOrDefault(x => x.UserId == userId);
+			
+           ListDocument = await _context.Documents.Include(c => c.Category).Include(u=> u.User).Where(x=> x.User.AgenceId == user.AgenceId).ToListAsync();
+			return new JsonResult(ListDocument);
+		}
 	}
 }

@@ -14,5 +14,9 @@ namespace Project_PRN221
         {
             // Xử lý sự kiện tại đây
         }
+        public async Task LoadCreateDocs(int Id)
+        {
+            // Xử lý sự kiện tại đây
+        }
     }
 }
