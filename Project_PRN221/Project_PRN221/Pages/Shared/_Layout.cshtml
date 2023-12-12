@@ -103,7 +103,7 @@
                                     {
                                         string role = User.FindFirstValue(ClaimTypes.Role);
                                         string name = User.FindFirstValue(ClaimTypes.Name);
-                                        <li id="username">
+                                        <li>
                                             <a href="#">Xin chào, @name</a>
                                         </li>
                                         @if (role.Equals("Admin"))
@@ -175,18 +175,15 @@
                 <div class="close-btn">
                     <span class="lnr lnr-cross" id="close-icon"></span>
                 </div>
-                <div id="userProfile">
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <img src="@User.FindFirstValue("Avatar")" alt="Ảnh đại diện" />
-                        <p>Họ tên: @User.FindFirstValue(ClaimTypes.Name)</p>
-                        <p>Số điên thoại: @User.FindFirstValue(ClaimTypes.MobilePhone)</p>
-                        <p>Email: @User.FindFirstValue(ClaimTypes.Email)</p>
-                        <a href="/User/ChangeProfile">Chỉnh sửa thông tin</a>
-                        <a href="/User/ChangePassword">Đổi mật khẩu</a>
-                    }
-                </div>
-
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <img src="@User.FindFirstValue("Avatar")" alt="Ảnh đại diện" />
+                    <p>Họ tên: @User.FindFirstValue(ClaimTypes.Name)</p>
+                    <p>Số điên thoại: @User.FindFirstValue(ClaimTypes.MobilePhone)</p>
+                    <p>Email: @User.FindFirstValue(ClaimTypes.Email)</p>
+                    <a href="/User/ChangeProfile">Chỉnh sửa thông tin</a>
+                    <a href="/User/ChangePassword">Đổi mật khẩu</a>
+                }
                 <!-- CONTACT -->
                 <div class="contact-part">
                     <div class="contact-line">
@@ -381,50 +378,6 @@
     <script src="~/vendor/jquery-timepicker-master/jquery.timepicker.min.js"></script>
 
     <script src="~/js/main.min.js"></script>
-
-    <!-- SignalR -->
-    <script src="~/js/signalr/dist/browser/signalr.js"></script>
-    <script type="text/javascript">
-        var connection = new signalR.HubConnectionBuilder().withUrl("/signalrServer").build();
-        connection.start()
-            .then(function () {
-                console.log('SignalR đã kết nối thành công');
-            })
-            .catch(function (err) {
-                console.error('SignalR đã kết nối thất bại');
-            });
-        connection.onclose(function (error) {
-            console.log('SignalR kết nối đã đóng với lỗi: ' + error);
-        });
-
-        connection.on("LoadProfile", function (profile) {
-            console.log('Sự kiện "LoadProfile" đã được gọi');
-            LoadProfileData(profile);
-        });
-
-
-        function LoadProfileData(profile) {
-            var userId = @User.FindFirstValue("AccountId");
-            if (userId === profile.id) {
-
-                console.log(`Hàm "LoadProData" đã được gọi ${profile}`);
-                var username = `<a href="#">Xin chào, ${profile.name}</a>`;
-                console.log("Username: " + username);
-                var userProfile = ` <img src="${profile.avatar}" alt="Ảnh đại diện" />
-                                        <p>Họ tên: ${profile.name}</p>
-                                        <p>Số điên thoại: ${profile.phone}</p>
-                                        <p>Email: ${profile.email}</p>
-                                        <a href="/User/ChangeProfile">Chỉnh sửa thông tin</a>
-                                        <a href="/User/ChangePassword">Đổi mật khẩu</a>`;
-                console.log("Profile: " + userProfile);
-                $("#username").html(username);
-                $("#userProfile").html(userProfile);
-            }
-            console.log("Đồng bộ thành công");
-        }
-    </script>
-
-
     <style>
         .sorting table {
             width: 100%;

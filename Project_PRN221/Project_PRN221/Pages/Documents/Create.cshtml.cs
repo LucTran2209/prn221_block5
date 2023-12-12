@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Project_PRN221.Models;
 using System.Security.Claims;
@@ -10,17 +9,14 @@ namespace Project_PRN221.Pages.Documents
 {
     public class CreateModel : PageModel
     {
-        private readonly Project_PRN221.Models.PROJECT_SENT_DOCUMENTContext _context;
-        private readonly IHubContext<SignalRHub> _signalRHub;
+		public readonly PROJECT_SENT_DOCUMENTContext _context;
 
+		public CreateModel(PROJECT_SENT_DOCUMENTContext context)
+		{
+			_context = context;
+		}
 
-        public CreateModel(Project_PRN221.Models.PROJECT_SENT_DOCUMENTContext context, IHubContext<SignalRHub> signalRHub)
-        {
-            _context = context;
-            _signalRHub = signalRHub;
-        }
-
-        [BindProperty]
+		[BindProperty]
 		public Document document { get; set; }
 
 		[BindProperty]
@@ -53,9 +49,8 @@ namespace Project_PRN221.Pages.Documents
 
 			_context.Documents.Add(document);
 			_context.SaveChanges();
-            await _signalRHub.Clients.All.SendAsync("LoadCreateDocs", document.UserId);
 
-            return RedirectToPage("/Index");
+			return RedirectToPage("/Index");
 		}
 	}
 }

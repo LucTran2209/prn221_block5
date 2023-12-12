@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
-using Project_PRN221;
 using Project_PRN221.CustomHandler;
 using Project_PRN221.Models;
 using System.Security.Claims;
@@ -9,7 +8,7 @@ using System.Security.Claims;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages(); builder.Services.AddAntiforgery(o => o.HeaderName = "XSRF-TOKEN");
+builder.Services.AddRazorPages();
 builder.Services.AddDbContext<PROJECT_SENT_DOCUMENTContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddSession(options =>
@@ -76,7 +75,7 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-app.MapHub<SignalRHub>("/signalrServer");
+//app.MapHub<ProductServer>("/hubs");
 
 app.Run();
 
