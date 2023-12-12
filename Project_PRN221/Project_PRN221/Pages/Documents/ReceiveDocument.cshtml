@@ -237,7 +237,7 @@
                 "isRead": '@Model.IsRead' ? '@Model.IsRead'.toLowerCase() === 'true' : null,
                 "pageIndex": '@Model.IndexPage' ? Number('@Model.IndexPage') : null
             }),
-            contentType: 'application/json',
+           // contentType: 'application/json',
             headers: {
                 "RequestVerificationToken": $('input[name="__RequestVerificationToken"]').val()
             },

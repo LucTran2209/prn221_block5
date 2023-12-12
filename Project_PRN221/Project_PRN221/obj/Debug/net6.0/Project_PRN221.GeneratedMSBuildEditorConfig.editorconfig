@@ -56,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9jdW1lbnRzXFNlbmREb2N1bWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/PRN221/Block5/ProjectPRN221_Block5/Project_PRN221/Project_PRN221/Pages/Documents/SendToAgence.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9jdW1lbnRzXFNlbmRUb0FnZW5jZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/PRN221/Block5/ProjectPRN221_Block5/Project_PRN221/Project_PRN221/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -84,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/PRN221/Block5/ProjectPRN221_Block5/Project_PRN221/Project_PRN221/Pages/User/ChangeProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxDaGFuZ2VQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/PRN221/Block5/ProjectPRN221_Block5/Project_PRN221/Project_PRN221/Pages/User/ForgetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -98,6 +106,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/PRN221/Block5/ProjectPRN221_Block5/Project_PRN221/Project_PRN221/Pages/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PRN221/Block5/ProjectPRN221_Block5/Project_PRN221/Project_PRN221/Pages/User/UpdateProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxVcGRhdGVQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/PRN221/Block5/ProjectPRN221_Block5/Project_PRN221/Project_PRN221/Pages/_ViewImports.cshtml]

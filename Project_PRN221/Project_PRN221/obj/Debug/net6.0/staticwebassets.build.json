@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OOKUxrLxBOtx1OY6AhQ9AepRlsm6HpONFVeL/AUCgTw=",
+  "Hash": "YPwxlQx3BoKcnkpGYFbboBoe1pvz7X3UszmzoBPtqmo=",
   "Source": "Project_PRN221",
   "BasePath": "_content/Project_PRN221",
   "Mode": "Default",
@@ -2021,6 +2021,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\satisfy\\Satisfy-Regular.ttf"
+    },
+    {
+      "Identity": "D:\\PRN221\\Block5\\ProjectPRN221_Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\images\\default.png",
+      "SourceId": "Project_PRN221",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PRN221\\Block5\\ProjectPRN221_Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\",
+      "BasePath": "_content/Project_PRN221",
+      "RelativePath": "images/default.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\default.png"
     },
     {
       "Identity": "D:\\PRN221\\Block5\\ProjectPRN221_Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery.countdown.min.js",

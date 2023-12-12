@@ -469,6 +469,10 @@
       "PackagePath": "staticwebassets\\fonts\\satisfy\\Satisfy-Regular.ttf"
     },
     {
+      "Id": "D:\\PRN221\\Block5\\ProjectPRN221_Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\images\\default.png",
+      "PackagePath": "staticwebassets\\images\\default.png"
+    },
+    {
       "Id": "D:\\PRN221\\Block5\\ProjectPRN221_Block5\\Project_PRN221\\Project_PRN221\\wwwroot\\js\\jquery-3.3.1.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
     },
