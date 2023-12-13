@@ -1,0 +1,83 @@
+﻿@page
+@model Project_PRN221.Pages.Management.IndexModel
+
+@{
+	Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<section class="section-primary pt-150 pb-113 shop-list">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="sorting">
+					<div class="woocommerce-result-count font-weight-bold" style="font-family: Merriweather;font-size: 40px;">
+						Thống kê văn bản
+					</div>
+					<table>
+						<tr>
+							<td>
+								<span>Số lượng văn bản</span>
+								<div class="widget_search">
+									@Model.DocNumber
+								</div>
+							</td>
+							<td>
+								<span>Số cơ sở</span>
+								<div class="form-holder">
+									@Model.AgenceNumber
+								</div>
+							</td>
+							<td>
+								<span>Số lượt gửi</span>
+								<div class="form-holder">
+									<div class="widget_search">
+										@Model.SendNumber
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Tuần</span>
+							</td>
+							<td>
+								<div class="widget_search">
+									<input class="form-control" type="week" asp-for="weekTime" onchange="sendGetRequest(this.value)">
+								</div>
+							</td>
+							<td colspan="3">
+							</td>
+						</tr>
+					</table>
+					<div id="chartContainer" style="height: 400px; width: 60%;"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript">
+	window.onload = function () {
+		var chart = new CanvasJS.Chart("chartContainer", {
+			title: {
+				text: "Biểu đồ số lượng SendDocuments trong tuần"
+			},
+			axisX: {
+				labelFormatter: function (e) {
+					var days = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
+					return days[e.value];
+				}
+			},
+			data: [{
+				type: "line",
+				dataPoints: @Html.Raw(Json.Serialize(Model.weekSend.Select((value, index) => new { x = index, y = value })))
+			}]
+		});
+		chart.render();
+	}
+
+</script>
+<script>
+	function sendGetRequest(value) {
+		window.location.href = '?weekTime=' + value;
+	}
+</script>
