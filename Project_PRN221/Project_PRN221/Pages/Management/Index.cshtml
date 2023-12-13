@@ -15,65 +15,67 @@
 					<table>
 						<tr>
 							<td>
-								<span>Số lượng văn bản</span>
-								<div class="widget_search">
-									@Model.DocNumber
-								</div>
+								<span>
+									Số lượng văn bản: @Model.DocNumber
+								</span>
 							</td>
 							<td>
-								<span>Số cơ sở</span>
-								<div class="form-holder">
-									@Model.AgenceNumber
-								</div>
+								<span>
+									Số lượng cơ sở: @Model.AgenceNumber
+								</span>
 							</td>
+
 							<td>
-								<span>Số lượt gửi</span>
-								<div class="form-holder">
-									<div class="widget_search">
-										@Model.SendNumber
-									</div>
-								</div>
+								<span>Tuần</span>
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<span>Tuần</span>
+								<span>
+									Số lượt gửi: @Model.SendNumber
+								</span>
+							</td>
+							<td>
 							</td>
 							<td>
 								<div class="widget_search">
 									<input class="form-control" type="week" asp-for="weekTime" onchange="sendGetRequest(this.value)">
 								</div>
 							</td>
-							<td colspan="3">
-							</td>
+
 						</tr>
 					</table>
-					<div id="chartContainer" style="height: 400px; width: 60%;"></div>
+					<div id="chartContainer" style="height: 400px; width: 60%;margin:auto;"></div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
+@{
+	var days = new[] { "Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy" };
+}
 <script type="text/javascript">
 	window.onload = function () {
+
 		var chart = new CanvasJS.Chart("chartContainer", {
 			title: {
-				text: "Biểu đồ số lượng SendDocuments trong tuần"
+				text: "Biểu đồ số lượt gửi văn bản trong tuần"
 			},
 			axisX: {
 				labelFormatter: function (e) {
-					var days = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
-					return days[e.value];
+					var week = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
+					return week[e.value];
 				}
 			},
 			data: [{
 				type: "line",
-				dataPoints: @Html.Raw(Json.Serialize(Model.weekSend.Select((value, index) => new { x = index, y = value })))
+				toolTipContent: "{label}: {y} lượt",
+				dataPoints: @Html.Raw(Json.Serialize(Model.weekSend.Select((value, index) => new { label = days[index], x = index, y = value })))
 			}]
 		});
 		chart.render();
 	}
+
 
 </script>
 <script>

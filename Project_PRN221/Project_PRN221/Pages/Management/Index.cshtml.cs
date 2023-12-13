@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -57,6 +58,12 @@ namespace Project_PRN221.Pages.Management
 		}
 		public static DateTime ParseWeekTime(string weekTimeString)
 		{
+			// Kiểm tra xem chuỗi có đúng định dạng không
+			if (!Regex.IsMatch(weekTimeString, @"^\d{4}-W\d{2}$"))
+			{
+				return DateTime.Now;
+			}
+
 			// Tách chuỗi thành năm và tuần
 			string[] parts = weekTimeString.Split('-');
 			int year = int.Parse(parts[0]);
@@ -66,20 +73,28 @@ namespace Project_PRN221.Pages.Management
 			DateTime startOfYear = new DateTime(year, 1, 1);
 
 			// Tính ngày đầu tiên của tuần
-			int daysOffset = DayOfWeek.Thursday - startOfYear.DayOfWeek;
+			int daysOffset = DayOfWeek.Monday - startOfYear.DayOfWeek;
 
-			DateTime firstThursday = startOfYear.AddDays(daysOffset);
+			DateTime firstMonday = startOfYear.AddDays(daysOffset);
 			var cal = CultureInfo.CurrentCulture.Calendar;
-			int firstWeek = cal.GetWeekOfYear(firstThursday, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday);
+			int firstWeek = cal.GetWeekOfYear(firstMonday, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday);
 
 			var weekNum = week;
 			if (firstWeek <= 1)
 			{
 				weekNum -= 1;
 			}
-			var result = firstThursday.AddDays(weekNum * 7);
+			var result = firstMonday.AddDays(weekNum * 7);
+
+			// Kiểm tra xem tuần có chứa ngày từ năm tiếp theo không
+			if (result.Year > year)
+			{
+				result = result.AddDays(-7);
+			}
+
 			return result;
 		}
+
 
 	}
 
