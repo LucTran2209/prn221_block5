@@ -13,13 +13,13 @@ namespace Project_PRN221.Pages.User
     {
         private readonly PROJECT_SENT_DOCUMENTContext _context;
         private readonly IWebHostEnvironment _hostingEnvironment;
-        private readonly IHubContext<SignalRHub> _signalRHub;
+        //private readonly IHubContext<SignalRHub> _signalRHub;
 
-        public UpdateProfileModel(PROJECT_SENT_DOCUMENTContext context, IWebHostEnvironment hostingEnvironment, IHubContext<SignalRHub> signalRHub)
+        public UpdateProfileModel(PROJECT_SENT_DOCUMENTContext context, IWebHostEnvironment hostingEnvironment)
         {
             _context = context;
             _hostingEnvironment = hostingEnvironment;
-            _signalRHub = signalRHub;
+            //_signalRHub = signalRHub;
         }
         public async Task OnGet()
         {

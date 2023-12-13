@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Project_PRN221.Models
 {
@@ -9,7 +11,8 @@ namespace Project_PRN221.Models
         {
             Documents = new HashSet<Document>();
         }
-
+        [BindProperty]
+        [Required(ErrorMessage = "Không được để trống")]
         public int CategoryId { get; set; }
         public string CategoryName { get; set; } = null!;
 
